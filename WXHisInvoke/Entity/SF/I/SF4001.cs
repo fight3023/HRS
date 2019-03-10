@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.SF.I
 {
-    class SF4001
+    /// <summary>
+    /// (SF4001)下载交易汇总
+    /// </summary>
+    class SF4001 : BASE_I
     {
     }
 }

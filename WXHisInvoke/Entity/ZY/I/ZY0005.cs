@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.ZY.I
 {
-    class ZY0005
+    /// <summary>
+    /// (ZY0005)获取住院明细费用
+    /// </summary>
+    class ZY0005 : BASE_I
     {
     }
 }

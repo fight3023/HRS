@@ -22,3 +22,6 @@ C:\Users\Administrator\documents\visual studio 2012\Projects\HRS\HRS\obj\Debug\P
 E:\医院\HRS\HRS\bin\Debug\HRS.exe.config
 E:\医院\HRS\HRS\obj\Debug\HRS.exe
 E:\医院\HRS\HRS\obj\Debug\HRS.pdb
+I:\sxh\his\HRS\HRS\bin\Debug\HRS.exe.config
+I:\sxh\his\HRS\HRS\obj\Debug\HRS.exe
+I:\sxh\his\HRS\HRS\obj\Debug\HRS.pdb

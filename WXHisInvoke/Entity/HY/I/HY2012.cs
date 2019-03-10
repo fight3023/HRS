@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.HY.I
 {
-    class HY2012
+    /// <summary>
+    /// (HY2012)标本采集取消
+    /// </summary>
+    class HY2012 : BASE_I
     {
     }
 }

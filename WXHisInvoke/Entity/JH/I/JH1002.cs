@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.JH.I
 {
-    class JH1002
+    /// <summary>
+    /// (JH1002)市民卡充值
+    /// </summary>
+    class JH1002 : BASE_I
     {
     }
 }

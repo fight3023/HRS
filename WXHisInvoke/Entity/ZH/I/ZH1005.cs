@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.ZH.I
 {
-    class ZH1005
+    /// <summary>
+    /// (ZH1005)帐户操作流水查询
+    /// </summary>
+    class ZH1005 : BASE_I
     {
     }
 }
