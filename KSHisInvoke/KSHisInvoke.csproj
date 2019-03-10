@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F32DA36-D7BA-4CEC-8A79-B625EAEA042F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KSHisInvoke</RootNamespace>
+    <AssemblyName>KSHisInvoke</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constrants\InterfaceConstrant.cs" />
+    <Compile Include="Entity\chaxun\ChaxunJiaofeiRequest.cs" />
+    <Compile Include="Entity\chaxun\ChaxunJiaofeiResponse.cs" />
+    <Compile Include="Entity\chaxun\ChaxunMenzhenmxRequest.cs" />
+    <Compile Include="Entity\chaxun\ChaxunMenzhenmxResponse.cs" />
+    <Compile Include="Entity\chaxun\ChaxunYaopinjgRequest.cs" />
+    <Compile Include="Entity\chaxun\ChaxunYaopinjgResponse.cs" />
+    <Compile Include="Entity\chaxun\ChaxunYuyueRequest.cs" />
+    <Compile Include="Entity\chaxun\ChaxunYuyueResponse.cs" />
+    <Compile Include="Entity\chaxun\ChaxunZhenliaojgRequest.cs" />
+    <Compile Include="Entity\chaxun\ChaxunZhenliaojgResponse.cs" />
+    <Compile Include="Entity\chaxun\ChaxunZhuyuanmxRequest.cs" />
+    <Compile Include="Entity\chaxun\ChaxunZhuyuanmxResponse.cs" />
+    <Compile Include="Entity\CommonRequest.cs" />
+    <Compile Include="Entity\CommonResponse.cs" />
+    <Compile Include="Entity\dangan\DanganBingrenRequest.cs" />
+    <Compile Include="Entity\dangan\DanganBingrenResponse.cs" />
+    <Compile Include="Entity\dangan\DanganJiandangRequest.cs" />
+    <Compile Include="Entity\dangan\DanganJiandangResponse.cs" />
+    <Compile Include="Entity\dangan\DanganXiugaiRequest.cs" />
+    <Compile Include="Entity\dangan\DanganXiugaiResponse.cs" />
+    <Compile Include="Entity\guahao\GuahaoBingrenRequest.cs" />
+    <Compile Include="Entity\guahao\GuahaoBingrenResponse.cs" />
+    <Compile Include="Entity\guahao\GuahaoPaibanRequest.cs" />
+    <Compile Include="Entity\guahao\GuahaoPaibanResponse.cs" />
+    <Compile Include="Entity\guahao\GuahaoQuxiaoRequest.cs" />
+    <Compile Include="Entity\guahao\GuahaoQuxiaoResponse.cs" />
+    <Compile Include="Entity\guahao\GuahaoShoufeiRequest.cs" />
+    <Compile Include="Entity\guahao\GuahaoShoufeiResponse.cs" />
+    <Compile Include="Entity\pubdic\PubdicKeshiRequest.cs" />
+    <Compile Include="Entity\pubdic\PubdicKeshiResponse.cs" />
+    <Compile Include="Entity\pubdic\PubdicShoufeixmRequest.cs" />
+    <Compile Include="Entity\pubdic\PubdicShoufeixmResponse.cs" />
+    <Compile Include="Entity\pubdic\PubdicYaopinRequest.cs" />
+    <Compile Include="Entity\pubdic\PubdicYaopinResponse.cs" />
+    <Compile Include="Entity\pubdic\PubdicZhengjianlxRequest.cs" />
+    <Compile Include="Entity\pubdic\PubdicZhengjianlxResponse.cs" />
+    <Compile Include="Entity\pubdic\PubdicZhigongRequest.cs" />
+    <Compile Include="Entity\pubdic\PubdicZhigongResponse.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiChufangRequest.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiChufangResponse.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiJiesuanRequest.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiJiesuanResponse.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiKexingRequest.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiKexingResponse.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiYijiRequest.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiYijiResponse.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiYujiesuanRequest.cs" />
+    <Compile Include="Entity\shoufei\ShoufeiYujiesuanResponse.cs" />
+    <Compile Include="Entity\yibao\YibaoDukaRequest.cs" />
+    <Compile Include="Entity\yibao\YibaoDukaResponse.cs" />
+    <Compile Include="Entity\yibao\YibaoJiaoyiqrRequest.cs" />
+    <Compile Include="Entity\yibao\YibaoJiaoyiqrResponse.cs" />
+    <Compile Include="Entity\yibao\YibaoYujiesuanRequest.cs" />
+    <Compile Include="Entity\yibao\YibaoYujiesuanResponse.cs" />
+    <Compile Include="Entity\yushouquan\YushouquanChaxunRequest.cs" />
+    <Compile Include="Entity\yushouquan\YushouquanChaxunResponse.cs" />
+    <Compile Include="Entity\yushouquan\YushouquanRequest.cs" />
+    <Compile Include="Entity\yushouquan\YushouquanResponse.cs" />
+    <Compile Include="Entity\yushouquan\YushouquanZhuijiaRequest.cs" />
+    <Compile Include="Entity\yushouquan\YushouquanZhuijiaResponse.cs" />
+    <Compile Include="Entity\yuyue\YuyueGuahaoRequest.cs" />
+    <Compile Include="Entity\yuyue\YuyueGuahaoResponse.cs" />
+    <Compile Include="Entity\yuyue\YuyueHouzhensjRequest.cs" />
+    <Compile Include="Entity\yuyue\YuyueHouzhensjResponse.cs" />
+    <Compile Include="Entity\yuyue\YuyuePaibanRequest.cs" />
+    <Compile Include="Entity\yuyue\YuyuePaibaResponse.cs" />
+    <Compile Include="Entity\yuyue\YuyueQuhaoRequest.cs" />
+    <Compile Include="Entity\yuyue\YuyueQuhaoResponse.cs" />
+    <Compile Include="Entity\yuyue\YuyueQuxiaoRequest.cs" />
+    <Compile Include="Entity\yuyue\YuyueQuxiaoResponse.cs" />
+    <Compile Include="Entity\zhuyuan\ZhuyuanBujiaoRequest.cs" />
+    <Compile Include="Entity\zhuyuan\ZhuyuanBujiaoResponse.cs" />
+    <Compile Include="Entity\zhuyuan\ZhuyuanFeiyongcxRequest.cs" />
+    <Compile Include="Entity\zhuyuan\ZhuyuanFeiyongcxResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
