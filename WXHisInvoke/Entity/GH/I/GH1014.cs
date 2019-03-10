@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH1014 : BASE_I
     {
+        string SFZH { get; set; }//		18	查询方式 SFZH	INPARA
     }
 }

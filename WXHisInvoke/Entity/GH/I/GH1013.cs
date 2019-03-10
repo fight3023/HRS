@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH1013 : BASE_I
     {
+        string FBLX { get; set; }//		1	查询方式 FBLX	INPARA
     }
 }

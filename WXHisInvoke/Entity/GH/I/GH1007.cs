@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH1007 : BASE_I
     {
+        string MZH { get; set; }//		13	门诊号	INPARA
     }
 }

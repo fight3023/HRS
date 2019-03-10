@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH2501 : BASE_I
     {
+        string MZH { get; set; }//		13	挂号成功返回的门诊号	INPARA
     }
 }

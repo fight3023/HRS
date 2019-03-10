@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH1012 : BASE_I
     {
+        string SBKLX { get; set; }//		1	SBK>社保卡类型 (对应IC_CARD.DM)	INPARA
     }
 }

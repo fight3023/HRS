@@ -11,5 +11,9 @@ namespace WXHisInvoke.Entity.GH.O
     /// </summary>
     class GH1302 : BASE_O
     {
+        string RET_ROW { get; set; }//		5	返回行数	
+        string LBDM { get; set; }//		5	类别代码	GH1302_TAB1
+        string LBMC { get; set; }//		20	类别名称	GH1302_TAB1
+        string DYKSLB { get; set; }//		10	对应的科室门诊类型,多个用逗号隔开 如   1,2	GH1302_TAB1
     }
 }

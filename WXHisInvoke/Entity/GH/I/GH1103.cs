@@ -11,5 +11,10 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH1103 : BASE_I
     {
+        string JZKH { get; set; }//		30	就诊卡号	INPARA
+        string BRXM { get; set; }//		20	病人姓名	INPARA
+        string GHKSDM { get; set; }//		3	挂号科室代码	INPARA
+        string GHYSGH { get; set; }//		5	挂号医生工号 (如挂号科室一定要指定医生时,需要写)	INPARA
+        string SJLX { get; set; }//		1	时间类型(A=上午/P=下午/F=全天/N=夜间)	INPARA
     }
 }
