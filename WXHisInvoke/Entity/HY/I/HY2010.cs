@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.HY.I
 {
-    class HY2010
+    /// <summary>
+    /// (HY2010)生成条码
+    /// </summary>
+    class HY2010 : BASE_I
     {
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.JH.I
 {
-    class ZF2001
+    /// <summary>
+    /// (ZF2001)市民卡非业务费用查询（可拓展）
+    /// </summary>
+    class ZF2001 : BASE_I
     {
     }
 }

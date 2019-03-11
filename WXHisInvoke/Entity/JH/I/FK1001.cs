@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.JH.I
 {
-    class FK1001
+    /// <summary>
+    /// (FK1001)临海市民卡发卡
+    /// </summary>
+    class FK1001 : BASE_I
     {
     }
 }

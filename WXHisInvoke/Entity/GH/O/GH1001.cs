@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 namespace WXHisInvoke.Entity.GH.O
 {
     /// <summary>
-    /// 3.1.	(GH1001)自助挂号重置
+    /// (GH1001)自助挂号重置
     /// </summary>
     class GH1001 : BASE_O
     {
+        /// <summary>
+        /// 100	提示信息	GH1001_TAB1
+        /// </summary>
+        string TSXX { get; set; }
     }
 }

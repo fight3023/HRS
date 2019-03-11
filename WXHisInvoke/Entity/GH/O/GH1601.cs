@@ -11,5 +11,18 @@ namespace WXHisInvoke.Entity.GH.O
     /// </summary>
     class GH1601 : BASE_O
     {
+        string RET_ROW { get; set; }//		4	交易成功时返回的行数	
+        string ZGGH { get; set; }//		5	医生工号, 动态数组	GH1601_TAB1
+        string ZGXM { get; set; }//		10	医生姓名, 动态数组	GH1601_TAB1
+        string ZC { get; set; }//		32	职称，动态数组	GH1601_TAB1
+        string JSXX { get; set; }//		2048	介绍信息, 动态数组	GH1601_TAB1
+        string FILENAME { get; set; }//		50	照片存放路径及名称, 动态数组	GH1601_TAB1
+        string PBKSSJ { get; set; }//		8	排班开始时间	GH1601_TAB1
+        string PBJSSJ { get; set; }//		8	排班结束时间	GH1601_TAB1
+        string GHBZ { get; set; }//		1	是否可挂号(Y/N),动态数组	GH1601_TAB1
+        string XB { get; set; }//		2	医生性别	GH1601_TAB1
+        string CSRQ { get; set; }//		10	医生出生日期 格式：YYYY-MM-DD	GH1601_TAB1
+        string KSBH { get; set; }//		3	科室编号	GH1601_TAB1
+        string KSMC { get; set; }//		12	科室名称	GH1601_TAB1
     }
 }

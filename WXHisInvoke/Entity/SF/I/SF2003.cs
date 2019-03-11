@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.SF.I
 {
-    class SF2003
+    /// <summary>
+    /// (SF2003)退费结算确认（只限诊间结算使用）
+    /// </summary>
+    class SF2003 : BASE_I
     {
     }
 }

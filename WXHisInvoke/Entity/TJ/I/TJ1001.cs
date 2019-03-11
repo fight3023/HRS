@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.TJ.I
 {
-    class TJ1001
+    /// <summary>
+    /// (TJ1001)获取体检病人信息
+    /// </summary>
+    class TJ1001 : BASE_I
     {
     }
 }

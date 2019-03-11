@@ -11,5 +11,7 @@ namespace WXHisInvoke.Entity.GH.I
     /// </summary>
     class GH2001 : BASE_I
     {
+        string CXFS { get; set; }//		6	查询方式 JZKH = 就诊卡号查 MZH = 门诊号查		INPARA 
+        string CXDM { get; set; }//		30	查询代码 查询方式 JZKH = 就诊卡号查	 MZH = 门诊号查		INPARA
     }
 }

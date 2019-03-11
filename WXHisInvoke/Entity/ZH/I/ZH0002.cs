@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.ZH.I
 {
-    class ZH0002
+    /// <summary>
+    /// (ZH0002)修改帐户支付密码
+    /// </summary>
+    class ZH0002 : BASE_I
     {
     }
 }

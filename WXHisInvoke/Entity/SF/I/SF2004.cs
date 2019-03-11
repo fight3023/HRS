@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.SF.I
 {
-    class SF2004
+    /// <summary>
+    /// (SF2004)收费发票重打(只限诊间结算使用)
+    /// </summary>
+    class SF2004 : BASE_I
     {
     }
 }

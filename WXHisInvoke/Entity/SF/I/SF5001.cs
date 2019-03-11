@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.SF.I
 {
-    class SF5001
+    /// <summary>
+    /// (SF5001)获取未支付结算信息
+    /// </summary>
+    class SF5001 : BASE_I
     {
     }
 }

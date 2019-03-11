@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.O
     /// </summary>
     class GH3001
     {
+        string YCDJH { get; set; }//		20	预存单据号	GH3001_TAB1
     }
 }

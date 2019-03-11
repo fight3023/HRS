@@ -11,5 +11,6 @@ namespace WXHisInvoke.Entity.GH.O
     /// </summary>
     class GH1012 : BASE_O
     {
+        string JZKH { get; set; }//		30	就诊卡号	GH1012_TAB1
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.JH.I
 {
-    class DZ1001
+    /// <summary>
+    /// (DZ1001)取HIS银行交易数据返回给自助商
+    /// </summary>
+    class DZ1001 : BASE_I
     {
     }
 }
