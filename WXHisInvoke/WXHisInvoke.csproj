@@ -1,53 +1,249 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>b2cf57a9-d4a3-4ccd-8232-5a1cf6f2b5c8</ProjectGuid>
-		<OutputType>Library</OutputType>
-		<AppDesignerFolder>Properties</AppDesignerFolder>
-		<RootNamespace>WXHisInvoke</RootNamespace>
-		<AssemblyName>WXHisInvoke</AssemblyName>
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DebugType>pdbonly</DebugType>
- 		<Optimize>true</Optimize>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="System"/>
-		
-		<Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
-		
-		
-		<Reference Include="Microsoft.CSharp"/>
- 		
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="Class1.cs" />
-
-		<Compile Include="Properties\AssemblyInfo.cs" />
-	</ItemGroup>
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D7D48BB-1A85-446B-88CB-FB25B1A285F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WXHisInvoke</RootNamespace>
+    <AssemblyName>WXHisInvoke</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Constrants\InterfaceConstrant.cs" />
+    <Compile Include="Entity\BASE_I.cs" />
+    <Compile Include="Entity\BASE_O.cs" />
+    <Compile Include="Entity\GH\I\GH1001.cs" />
+    <Compile Include="Entity\GH\I\GH1002.cs" />
+    <Compile Include="Entity\GH\I\GH1003.cs" />
+    <Compile Include="Entity\GH\I\GH1004.cs" />
+    <Compile Include="Entity\GH\I\GH1007.cs" />
+    <Compile Include="Entity\GH\I\GH1011.cs" />
+    <Compile Include="Entity\GH\I\GH1012.cs" />
+    <Compile Include="Entity\GH\I\GH1013.cs" />
+    <Compile Include="Entity\GH\I\GH1014.cs" />
+    <Compile Include="Entity\GH\I\GH1102.cs" />
+    <Compile Include="Entity\GH\I\GH1103.cs" />
+    <Compile Include="Entity\GH\I\GH1302.cs" />
+    <Compile Include="Entity\GH\I\GH1501.cs" />
+    <Compile Include="Entity\GH\I\GH1601.cs" />
+    <Compile Include="Entity\GH\I\GH2001.cs" />
+    <Compile Include="Entity\GH\I\GH2011.cs" />
+    <Compile Include="Entity\GH\I\GH2101.cs" />
+    <Compile Include="Entity\GH\I\GH2102.cs" />
+    <Compile Include="Entity\GH\I\GH2103.cs" />
+    <Compile Include="Entity\GH\I\GH2104.cs" />
+    <Compile Include="Entity\GH\I\GH2201.cs" />
+    <Compile Include="Entity\GH\I\GH2501.cs" />
+    <Compile Include="Entity\GH\I\GH3001.cs" />
+    <Compile Include="Entity\GH\I\GH5001.cs" />
+    <Compile Include="Entity\GH\I\GH5002.cs" />
+    <Compile Include="Entity\GH\O\GH1001.cs" />
+    <Compile Include="Entity\GH\O\GH1002.cs" />
+    <Compile Include="Entity\GH\O\GH1003.cs" />
+    <Compile Include="Entity\GH\O\GH1004.cs" />
+    <Compile Include="Entity\GH\O\GH1007.cs" />
+    <Compile Include="Entity\GH\O\GH1011.cs" />
+    <Compile Include="Entity\GH\O\GH1012.cs" />
+    <Compile Include="Entity\GH\O\GH1013.cs" />
+    <Compile Include="Entity\GH\O\GH1014.cs" />
+    <Compile Include="Entity\GH\O\GH1102.cs" />
+    <Compile Include="Entity\GH\O\GH1103.cs" />
+    <Compile Include="Entity\GH\O\GH1302.cs" />
+    <Compile Include="Entity\GH\O\GH1501.cs" />
+    <Compile Include="Entity\GH\O\GH1601.cs" />
+    <Compile Include="Entity\GH\O\GH2001.cs" />
+    <Compile Include="Entity\GH\O\GH2011.cs" />
+    <Compile Include="Entity\GH\O\GH2101.cs" />
+    <Compile Include="Entity\GH\O\GH2102.cs" />
+    <Compile Include="Entity\GH\O\GH2103.cs" />
+    <Compile Include="Entity\GH\O\GH2104.cs" />
+    <Compile Include="Entity\GH\O\GH2201.cs" />
+    <Compile Include="Entity\GH\O\GH2501.cs" />
+    <Compile Include="Entity\GH\O\GH3001.cs" />
+    <Compile Include="Entity\GH\O\GH5001.cs" />
+    <Compile Include="Entity\GH\O\GH5002.cs" />
+    <Compile Include="Entity\GY\I\GY0003.cs" />
+    <Compile Include="Entity\GY\I\GY1001.cs" />
+    <Compile Include="Entity\GY\I\GY1002.cs" />
+    <Compile Include="Entity\GY\I\GY1021.cs" />
+    <Compile Include="Entity\GY\I\GY1022.cs" />
+    <Compile Include="Entity\GY\I\GY1023.cs" />
+    <Compile Include="Entity\GY\I\GY1024.cs" />
+    <Compile Include="Entity\GY\I\GY2001.cs" />
+    <Compile Include="Entity\GY\I\GY2002.cs" />
+    <Compile Include="Entity\GY\I\GY3001.cs" />
+    <Compile Include="Entity\GY\I\GY3002.cs" />
+    <Compile Include="Entity\GY\I\GY3005.cs" />
+    <Compile Include="Entity\GY\I\GY3007.cs" />
+    <Compile Include="Entity\GY\I\GY3008.cs" />
+    <Compile Include="Entity\GY\I\GY3009.cs" />
+    <Compile Include="Entity\GY\I\GY3010.cs" />
+    <Compile Include="Entity\GY\I\GY3011.cs" />
+    <Compile Include="Entity\GY\I\GY3012.cs" />
+    <Compile Include="Entity\GY\I\GY3013.cs" />
+    <Compile Include="Entity\GY\I\GY3014.cs" />
+    <Compile Include="Entity\GY\I\GY3030.cs" />
+    <Compile Include="Entity\GY\I\GY3031.cs" />
+    <Compile Include="Entity\GY\I\GY3032.cs" />
+    <Compile Include="Entity\GY\I\GY8001.cs" />
+    <Compile Include="Entity\GY\O\GY0003.cs" />
+    <Compile Include="Entity\GY\O\GY1001.cs" />
+    <Compile Include="Entity\GY\O\GY1002.cs" />
+    <Compile Include="Entity\GY\O\GY1021.cs" />
+    <Compile Include="Entity\GY\O\GY1022.cs" />
+    <Compile Include="Entity\GY\O\GY1023.cs" />
+    <Compile Include="Entity\GY\O\GY1024.cs" />
+    <Compile Include="Entity\GY\O\GY2001.cs" />
+    <Compile Include="Entity\GY\O\GY2002.cs" />
+    <Compile Include="Entity\GY\O\GY3001.cs" />
+    <Compile Include="Entity\GY\O\GY3002.cs" />
+    <Compile Include="Entity\GY\O\GY3005.cs" />
+    <Compile Include="Entity\GY\O\GY3007.cs" />
+    <Compile Include="Entity\GY\O\GY3008.cs" />
+    <Compile Include="Entity\GY\O\GY3009.cs" />
+    <Compile Include="Entity\GY\O\GY3010.cs" />
+    <Compile Include="Entity\GY\O\GY3011.cs" />
+    <Compile Include="Entity\GY\O\GY3012.cs" />
+    <Compile Include="Entity\GY\O\GY3013.cs" />
+    <Compile Include="Entity\GY\O\GY3014.cs" />
+    <Compile Include="Entity\GY\O\GY3030.cs" />
+    <Compile Include="Entity\GY\O\GY3031.cs" />
+    <Compile Include="Entity\GY\O\GY3032.cs" />
+    <Compile Include="Entity\GY\O\GY8001.cs" />
+    <Compile Include="Entity\HY\I\HY2010.cs" />
+    <Compile Include="Entity\HY\I\HY2011.cs" />
+    <Compile Include="Entity\HY\I\HY2012.cs" />
+    <Compile Include="Entity\HY\I\HY2021.cs" />
+    <Compile Include="Entity\JH\I\DZ1001.cs" />
+    <Compile Include="Entity\JH\I\FK1001.cs" />
+    <Compile Include="Entity\JH\I\FK1002.cs" />
+    <Compile Include="Entity\JH\I\JH0001.cs" />
+    <Compile Include="Entity\JH\I\JH1002.cs" />
+    <Compile Include="Entity\JH\I\JH1003.cs" />
+    <Compile Include="Entity\JH\I\ZF1001.cs" />
+    <Compile Include="Entity\JH\I\ZF2001.cs" />
+    <Compile Include="Entity\SF\I\SF1001.cs" />
+    <Compile Include="Entity\SF\I\SF1002.cs" />
+    <Compile Include="Entity\SF\I\SF1004.cs" />
+    <Compile Include="Entity\SF\I\SF1005.cs" />
+    <Compile Include="Entity\SF\I\SF1006.cs" />
+    <Compile Include="Entity\SF\I\SF1007.cs" />
+    <Compile Include="Entity\SF\I\SF1008.cs" />
+    <Compile Include="Entity\SF\I\SF1009.cs" />
+    <Compile Include="Entity\SF\I\SF1010.cs" />
+    <Compile Include="Entity\SF\I\SF1021.cs" />
+    <Compile Include="Entity\SF\I\SF2001.cs" />
+    <Compile Include="Entity\SF\I\SF2003.cs" />
+    <Compile Include="Entity\SF\I\SF2004.cs" />
+    <Compile Include="Entity\SF\I\SF3001.cs" />
+    <Compile Include="Entity\SF\I\SF3002.cs" />
+    <Compile Include="Entity\SF\I\SF3003.cs" />
+    <Compile Include="Entity\SF\I\SF4001.cs" />
+    <Compile Include="Entity\SF\I\SF5001.cs" />
+    <Compile Include="Entity\SF\I\SF5002.cs" />
+    <Compile Include="Entity\SF\I\SF5003.cs" />
+    <Compile Include="Entity\SF\I\SF5004.cs" />
+    <Compile Include="Entity\SF\I\SF5005.cs" />
+    <Compile Include="Entity\TJ\I\TJ1001.cs" />
+    <Compile Include="Entity\TJ\I\TJ1002.cs" />
+    <Compile Include="Entity\TJ\I\TJ1005.cs" />
+    <Compile Include="Entity\TJ\I\TJ2001.cs" />
+    <Compile Include="Entity\WG\I\WG2001.cs" />
+    <Compile Include="Entity\WG\I\WG2002.cs" />
+    <Compile Include="Entity\WG\I\WG2003.cs" />
+    <Compile Include="Entity\WG\I\WG2008.cs" />
+    <Compile Include="Entity\WG\I\WG2011.cs" />
+    <Compile Include="Entity\WG\I\WG2012.cs" />
+    <Compile Include="Entity\WG\I\WG2013.cs" />
+    <Compile Include="Entity\WG\I\WG2014.cs" />
+    <Compile Include="Entity\WG\I\WG2015.cs" />
+    <Compile Include="Entity\WG\I\WG2016.cs" />
+    <Compile Include="Entity\WG\I\WG2017.cs" />
+    <Compile Include="Entity\WG\I\WG2018.cs" />
+    <Compile Include="Entity\WG\I\WG2019.cs" />
+    <Compile Include="Entity\WG\I\WG2020.cs" />
+    <Compile Include="Entity\WG\O\WG2001.cs" />
+    <Compile Include="Entity\WG\O\WG2002.cs" />
+    <Compile Include="Entity\WG\O\WG2003.cs" />
+    <Compile Include="Entity\WG\O\WG2008.cs" />
+    <Compile Include="Entity\WG\O\WG2011.cs" />
+    <Compile Include="Entity\WG\O\WG2012.cs" />
+    <Compile Include="Entity\WG\O\WG2013.cs" />
+    <Compile Include="Entity\WG\O\WG2014.cs" />
+    <Compile Include="Entity\WG\O\WG2015.cs" />
+    <Compile Include="Entity\WG\O\WG2016.cs" />
+    <Compile Include="Entity\WG\O\WG2017.cs" />
+    <Compile Include="Entity\WG\O\WG2018.cs" />
+    <Compile Include="Entity\WG\O\WG2019.cs" />
+    <Compile Include="Entity\WG\O\WG2020.cs" />
+    <Compile Include="Entity\ZH\I\ZH0001.cs" />
+    <Compile Include="Entity\ZH\I\ZH0002.cs" />
+    <Compile Include="Entity\ZH\I\ZH0003.cs" />
+    <Compile Include="Entity\ZH\I\ZH1001.cs" />
+    <Compile Include="Entity\ZH\I\ZH1002.cs" />
+    <Compile Include="Entity\ZH\I\ZH1003.cs" />
+    <Compile Include="Entity\ZH\I\ZH1004.cs" />
+    <Compile Include="Entity\ZH\I\ZH1005.cs" />
+    <Compile Include="Entity\ZH\I\ZH1006.cs" />
+    <Compile Include="Entity\ZH\I\ZH1007.cs" />
+    <Compile Include="Entity\ZH\I\ZH1008.cs" />
+    <Compile Include="Entity\ZH\I\ZH2001.cs" />
+    <Compile Include="Entity\ZH\I\ZH2002.cs" />
+    <Compile Include="Entity\ZH\I\ZH2003.cs" />
+    <Compile Include="Entity\ZY\I\ZY0001.cs" />
+    <Compile Include="Entity\ZY\I\ZY0002.cs" />
+    <Compile Include="Entity\ZY\I\ZY0003.cs" />
+    <Compile Include="Entity\ZY\I\ZY0004.cs" />
+    <Compile Include="Entity\ZY\I\ZY0005.cs" />
+    <Compile Include="Entity\ZY\I\ZY0006.cs" />
+    <Compile Include="Entity\ZY\I\ZY0007.cs" />
+    <Compile Include="Entity\ZY\I\ZY0008.cs" />
+    <Compile Include="Entity\ZY\I\ZY0009.cs" />
+    <Compile Include="Entity\ZY\I\ZY0010.cs" />
+    <Compile Include="Entity\ZY\I\ZY0011.cs" />
+    <Compile Include="Entity\ZY\I\ZY0012.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\HY\O\" />
+    <Folder Include="Entity\JH\O\" />
+    <Folder Include="Entity\SF\O\" />
+    <Folder Include="Entity\TJ\O\" />
+    <Folder Include="Entity\ZH\O\" />
+    <Folder Include="Entity\ZY\O\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -55,5 +251,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>
