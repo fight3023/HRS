@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-I:\sxh\his\HRS\HRS\obj\Debug\
+E:\医院\HRS\HRS\obj\Debug\
 HRS
 none
 false
 DEBUG;TRACE
-I:\sxh\his\HRS\HRS\App.xaml
+E:\医院\HRS\HRS\App.xaml
 4320551556
 
 12-1647098659
 131478842535
 Page\BasePage.xaml;Page\LoginType.xaml;Controls\MainItem.xaml;MainWindow.xaml;
 
-False
+True
 

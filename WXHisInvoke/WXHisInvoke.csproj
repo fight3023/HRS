@@ -39,7 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Common\HisDllInterface.cs" />
+    <Compile Include="Common\XmlPackageHelper.cs" />
     <Compile Include="Constrants\InterfaceConstrant.cs" />
     <Compile Include="Entity\BASE_I.cs" />
     <Compile Include="Entity\BASE_O.cs" />
