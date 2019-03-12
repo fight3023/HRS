@@ -127,7 +127,7 @@ namespace WXHisInvoke.Constrants
         /// <summary>
         /// 取挂号医生信息
         /// </summary>
-        public static string GH_GHYS = "GH1003";
+        public static string GH_GHYSXX = "GH1003";
         /// <summary>
         /// 取挂号科室号子信息
         /// </summary>
@@ -245,7 +245,7 @@ namespace WXHisInvoke.Constrants
         /// <summary>
         /// 预约撤销处理（新）
         /// </summary>
-        public static string WG_YYCX = "WG2019";
+        public static string WG_YYCXCL = "WG2019";
         /// <summary>
         /// 停诊科室查询
         /// </summary>
@@ -261,14 +261,14 @@ namespace WXHisInvoke.Constrants
         /// <summary>
         /// 网上挂号未签到确认挂号信息查询
         /// </summary>
-        public static string WG_ZDDL = "WG2017";
+        public static string WG_WQD = "WG2017";
         /// <summary>
         /// 网上挂号排班时间段查询
         /// </summary>
-        public static string WG_ZDDL = "WG2018";
+        public static string WG_PBSJ = "WG2018";
         /// <summary>
         /// 预约取号确认请求
         /// </summary>
-        public static string WG_ZDDL = "WG2020";
+        public static string WG_QHQR = "WG2020";
     }
 }
