@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY8001)病人信息获取
     /// </summary>
-    class GY8001 : BASE_I
+    public class GY8001 : BASE_I
     {
     }
 }

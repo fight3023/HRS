@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF1007)凭证补打
     /// </summary>
-    class SF1007 : BASE_I
+    public class SF1007 : BASE_I
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY3010)取费用价格信息
     /// </summary>
-    class GY3010 : BASE_I
+    public class GY3010 : BASE_I
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.ZH.I
     /// <summary>
     /// (ZH2003)账户退款(甬易)
     /// </summary>
-    class ZH2003 : BASE_I
+    public class ZH2003 : BASE_I
     {
     }
 }

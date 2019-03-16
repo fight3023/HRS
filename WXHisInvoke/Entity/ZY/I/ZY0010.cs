@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.ZY.I
     /// <summary>
     /// (ZY0010)住院收费预结算
     /// </summary>
-    class ZY0010 : BASE_I
+    public class ZY0010 : BASE_I
     {
     }
 }

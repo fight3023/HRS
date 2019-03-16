@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.WG.I
     /// <summary>
     /// 1.2.	(WG2003)网上挂号科室排班查询
     /// </summary>
-    class WG2003 : BASE_I
+    public class WG2003 : BASE_I
     {
     }
 }

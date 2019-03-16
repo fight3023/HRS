@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\HisDllInterface.cs" />
+    <Compile Include="Common\RequestHelper.cs" />
     <Compile Include="Common\XmlPackageHelper.cs" />
     <Compile Include="Constrants\InterfaceConstrant.cs" />
     <Compile Include="Entity\BASE_I.cs" />

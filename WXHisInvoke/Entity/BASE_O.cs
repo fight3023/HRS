@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity
 {
-    class BASE_O
+    public class BASE_O
     {
         /// <summary>
         /// 4	交易返回值，为0时表示成功，其它表示交易失败。	RESULTS

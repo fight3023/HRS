@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY3030)检验申请信息
     /// </summary>
-    class GY3030 : BASE_I
+    public class GY3030 : BASE_I
     {
     }
 }

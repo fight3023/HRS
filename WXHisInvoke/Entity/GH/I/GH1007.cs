@@ -9,8 +9,8 @@ namespace WXHisInvoke.Entity.GH.I
     /// <summary>
     /// 3.9.	(GH1007)挂号凭证补打
     /// </summary>
-    class GH1007 : BASE_I
+    public class GH1007 : BASE_I
     {
-        string MZH { get; set; }//		13	门诊号	INPARA
+        public string MZH { get; set; }//		13	门诊号	INPARA
     }
 }

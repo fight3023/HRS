@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY3007)获取挂号医生简介
     /// </summary>
-    class GY3007
+    public class GY3007
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.WG.I
     /// <summary>
     /// 1.10.	(WG2014)停诊科室查询
     /// </summary>
-    class WG2014 : BASE_I
+    public class WG2014 : BASE_I
     {
     }
 }

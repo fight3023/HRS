@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.JH.I
     /// <summary>
     /// (ZF2001)市民卡非业务费用查询（可拓展）
     /// </summary>
-    class ZF2001 : BASE_I
+    public class ZF2001 : BASE_I
     {
     }
 }

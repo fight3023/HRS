@@ -9,8 +9,8 @@ namespace WXHisInvoke.Entity.GH.O
     /// <summary>
     /// 3.25.	(GH1012)读社保卡
     /// </summary>
-    class GH1012 : BASE_O
+    public class GH1012 : BASE_O
     {
-        string JZKH { get; set; }//		30	就诊卡号	GH1012_TAB1
+        public string JZKH { get; set; }//		30	就诊卡号	GH1012_TAB1
     }
 }

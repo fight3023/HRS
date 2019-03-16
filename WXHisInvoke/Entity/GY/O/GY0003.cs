@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY0003)(999998)取系统参数
     /// </summary>
-    class GY0003
+    public class GY0003
     {
     }
 }

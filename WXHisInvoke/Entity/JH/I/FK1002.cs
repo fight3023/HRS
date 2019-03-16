@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.JH.I
     /// <summary>
     /// (FK1002)门诊补卡
     /// </summary>
-    class FK1002 : BASE_I
+    public class FK1002 : BASE_I
     {
     }
 }

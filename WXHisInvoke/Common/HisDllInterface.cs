@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace WXHisInvoke.Common
 {
-    class HisDllInterface
+    public class HisDllInterface
     {
         /// <summary>
         /// 该函数是设置服务的地址与端口,如该函数未调用,而直接调用 KTSendRcv 函数,将从配置文件 KTInterface.Ini文件中读配置来定位服务的地址与端口
@@ -60,7 +60,7 @@ namespace WXHisInvoke.Common
         /// <param name="recvlen">要接收的数据包长度，取recvbuf的长度，长整形</param>
         /// <returns>long（长整型）0：业务未初始化1：交易成功其它：交易系统错误</returns>
         [DllImport("kernel32.dll")]
-        public static extern int KTPBNI_Trading(string sendbuf, long sendlen, string recvbuf, long recvlen);
+        public static extern int KTPBNI_Trading(string sendbuf, long sendlen, ref string recvbuf, long recvlen);
 
         /// <summary>
         /// 该函数是释放动态库初始化内容

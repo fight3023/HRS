@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.JH.I
     /// <summary>
     /// (JH0001)市民卡余额查询
     /// </summary>
-    class JH0001 : BASE_I
+    public class JH0001 : BASE_I
     {
     }
 }

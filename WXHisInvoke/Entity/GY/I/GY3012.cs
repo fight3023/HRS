@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY3012)取自助可补收费用目录
     /// </summary>
-    class GY3012 : BASE_I
+    public class GY3012 : BASE_I
     {
     }
 }

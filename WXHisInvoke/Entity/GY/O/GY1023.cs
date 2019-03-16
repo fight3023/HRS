@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY1023)取数据字典
     /// </summary>
-    class GY1023
+    public class GY1023
     {
     }
 }

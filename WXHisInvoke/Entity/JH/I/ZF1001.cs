@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.JH.I
     /// <summary>
     /// (ZF1001)市民卡病历本项目支付（可拓展）
     /// </summary>
-    class ZF1001 : BASE_I
+    public class ZF1001 : BASE_I
     {
     }
 }

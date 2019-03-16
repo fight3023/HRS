@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF2001)收费结算确认
     /// </summary>
-    class SF2001 : BASE_I
+    public class SF2001 : BASE_I
     {
     }
 }

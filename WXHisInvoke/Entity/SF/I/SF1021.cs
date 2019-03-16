@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF1021)电子发票号收集验证
     /// </summary>
-    class SF1021 : BASE_I
+    public class SF1021 : BASE_I
     {
     }
 }

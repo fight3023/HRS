@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF4001)下载交易汇总
     /// </summary>
-    class SF4001 : BASE_I
+    public class SF4001 : BASE_I
     {
     }
 }

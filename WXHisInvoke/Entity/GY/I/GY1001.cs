@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY1001)(100301)取终端信息
     /// </summary>
-    class GY1001 : BASE_I
+    public class GY1001 : BASE_I
     {
     }
 }

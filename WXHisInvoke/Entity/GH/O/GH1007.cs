@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GH.O
     /// <summary>
     /// 3.9.	(GH1007)挂号凭证补打
     /// </summary>
-    class GH1007 : BASE_O
+    public class GH1007 : BASE_O
     {
     }
 }

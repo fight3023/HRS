@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY2002)(200001)终端退出
     /// </summary>
-    class GY2002
+    public class GY2002
     {
     }
 }

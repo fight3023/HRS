@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY3013)获取电子病历信息
     /// </summary>
-    class GY3013 : BASE_I
+    public class GY3013 : BASE_I
     {
     }
 }

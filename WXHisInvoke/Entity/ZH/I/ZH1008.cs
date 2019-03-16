@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.ZH.I
     /// <summary>
     /// (ZH1008)温州交通支付存储
     /// </summary>
-    class ZH1008 : BASE_I
+    public class ZH1008 : BASE_I
     {
     }
 }

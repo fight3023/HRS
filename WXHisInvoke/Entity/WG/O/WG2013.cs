@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.WG.O
     /// <summary>
     /// 1.7.	(WG2013)预约查询
     /// </summary>
-    class WG2013 : BASE_O
+    public class WG2013 : BASE_O
     {
     }
 }

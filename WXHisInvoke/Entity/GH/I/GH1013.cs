@@ -9,8 +9,8 @@ namespace WXHisInvoke.Entity.GH.I
     /// <summary>
     /// 3.7.	(GH1013) 取医保特病
     /// </summary>
-    class GH1013 : BASE_I
+    public class GH1013 : BASE_I
     {
-        string FBLX { get; set; }//		1	查询方式 FBLX	INPARA
+        public string FBLX { get; set; }//		1	查询方式 FBLX	INPARA
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY1022)取多媒体功能划分
     /// </summary>
-    class GY1022
+    public class GY1022
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.WG.I
     /// <summary>
     /// 1.1.	(WG2001)科室与医生排班查询
     /// </summary>
-    class WG2001 : BASE_I
+    public class WG2001 : BASE_I
     {
     }
 }

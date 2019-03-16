@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF3003)支付结果查询
     /// </summary>
-    class SF3003 : BASE_I
+    public class SF3003 : BASE_I
     {
     }
 }

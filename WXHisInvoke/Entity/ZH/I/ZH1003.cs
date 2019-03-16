@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.ZH.I
     /// <summary>
     /// (ZH1003)新建卡，新建账户
     /// </summary>
-    class ZH1003 : BASE_I
+    public class ZH1003 : BASE_I
     {
     }
 }

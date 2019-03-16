@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity.WG.I
 {
-    class WG2011 : BASE_I
+    public class WG2011 : BASE_I
     {
     }
 }

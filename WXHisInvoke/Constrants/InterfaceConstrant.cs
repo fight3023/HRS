@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Constrants
 {
-    class InterfaceConstrant
+    public class InterfaceConstrant
     {
         //--------------------------公共交易---------------------
         /// <summary>

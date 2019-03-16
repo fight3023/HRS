@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.ZH.I
     /// <summary>
     /// (ZH1006)获取医院流水号
     /// </summary>
-    class ZH1006 : BASE_I
+    public class ZH1006 : BASE_I
     {
     }
 }

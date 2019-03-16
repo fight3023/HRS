@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.I
     /// <summary>
     /// (GY1024)取门诊挂号、就诊时间
     /// </summary>
-    class GY1024 : BASE_I
+    public class GY1024 : BASE_I
     {
     }
 }

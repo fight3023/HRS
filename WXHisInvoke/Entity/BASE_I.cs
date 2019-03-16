@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WXHisInvoke.Entity
 {
-    class BASE_I
+    public class BASE_I
     {
         /// <summary>
         /// 10	交易代码, 参数值固定为本交易代码编号	HEADER

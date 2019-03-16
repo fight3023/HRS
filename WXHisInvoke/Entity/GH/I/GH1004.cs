@@ -9,9 +9,9 @@ namespace WXHisInvoke.Entity.GH.I
     /// <summary>
     /// 3.6.	(GH1004)(100004)取挂号科室号子信息
     /// </summary>
-    class GH1004 : BASE_I
+    public class GH1004 : BASE_I
     {
-        string GHKSDM { get; set; }//		3	挂号科室代码	INPARA
-        string ZGGH { get; set; }//		5	如果如果获取科室有指定医生需要传医生工号	INPARA
+        public string GHKSDM { get; set; }//		3	挂号科室代码	INPARA
+        public string ZGGH { get; set; }//		5	如果如果获取科室有指定医生需要传医生工号	INPARA
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.TJ.I
     /// <summary>
     /// (TJ2001)体检收费结算确认
     /// </summary>
-    class TJ2001 : BASE_I
+    public class TJ2001 : BASE_I
     {
     }
 }

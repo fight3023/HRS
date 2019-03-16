@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.ZH.I
     /// <summary>
     /// (ZH0002)修改帐户支付密码
     /// </summary>
-    class ZH0002 : BASE_I
+    public class ZH0002 : BASE_I
     {
     }
 }

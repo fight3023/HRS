@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF1010)现金消费明细
     /// </summary>
-    class SF1010 : BASE_I
+    public class SF1010 : BASE_I
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY3005)获取挂号科室简介
     /// </summary>
-    class GY3005
+    public class GY3005
     {
     }
 }

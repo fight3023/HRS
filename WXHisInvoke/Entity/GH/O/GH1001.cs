@@ -9,11 +9,11 @@ namespace WXHisInvoke.Entity.GH.O
     /// <summary>
     /// (GH1001)自助挂号重置
     /// </summary>
-    class GH1001 : BASE_O
+    public class GH1001 : BASE_O
     {
         /// <summary>
         /// 100	提示信息	GH1001_TAB1
         /// </summary>
-        string TSXX { get; set; }
+        public string TSXX { get; set; }
     }
 }

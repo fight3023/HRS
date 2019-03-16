@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.WG.I
     /// <summary>
     /// 1.6.	(WG2012)预约日期查询
     /// </summary>
-    class WG2012 : BASE_I
+    public class WG2012 : BASE_I
     {
     }
 }

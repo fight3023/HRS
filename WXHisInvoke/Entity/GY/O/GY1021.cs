@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY1021)取IC卡读卡类型
     /// </summary>
-    class GY1021
+    public class GY1021
     {
     }
 }

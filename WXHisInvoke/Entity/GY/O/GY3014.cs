@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     ///(GY3014)获取检验条码号
     /// </summary>
-    class GY3014
+    public class GY3014
     {
     }
 }

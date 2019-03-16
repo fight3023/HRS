@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.HY.I
     /// <summary>
     /// (HY2011)标本采集
     /// </summary>
-    class HY2011 : BASE_I
+    public class HY2011 : BASE_I
     {
     }
 }

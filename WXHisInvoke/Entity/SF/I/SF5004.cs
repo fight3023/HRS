@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF5004)发票使用状态更新
     /// </summary>
-    class SF5004 : BASE_I
+    public class SF5004 : BASE_I
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.SF.I
     /// <summary>
     /// (SF5001)获取未支付结算信息
     /// </summary>
-    class SF5001 : BASE_I
+    public class SF5001 : BASE_I
     {
     }
 }

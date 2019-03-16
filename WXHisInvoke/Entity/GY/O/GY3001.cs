@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.GY.O
     /// <summary>
     /// (GY3001)(100001)获取HIS系统时间
     /// </summary>
-    class GY3001
+    public class GY3001
     {
     }
 }

@@ -9,7 +9,7 @@ namespace WXHisInvoke.Entity.WG.O
     /// <summary>
     /// 1.9.	(WG2019)预约撤销处理（新）
     /// </summary>
-    class WG2019 : BASE_O
+    public class WG2019 : BASE_O
     {
     }
 }
