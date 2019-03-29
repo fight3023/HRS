@@ -1,0 +1,4 @@
+E:\医院\HRS\HRS.Util\bin\Debug\HRS.Util.dll
+E:\医院\HRS\HRS.Util\bin\Debug\HRS.Util.pdb
+E:\医院\HRS\HRS.Util\obj\Debug\HRS.Util.dll
+E:\医院\HRS\HRS.Util\obj\Debug\HRS.Util.pdb

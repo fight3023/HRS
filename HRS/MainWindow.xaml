@@ -2,34 +2,18 @@
         Title="MainWindow" Height="768" Width="1024" AllowsTransparency="False" WindowStartupLocation="CenterScreen" WindowStyle="None" >
 
     <Grid>
-        <Image Height="119" VerticalAlignment="Top" Source="Resources/logo2.png" Stretch="Fill">
-            <Image.BindingGroup>
-                <BindingGroup/>
-            </Image.BindingGroup>
-        </Image>
-        <Image Margin="0,119,0,0"  Source="Resources/bg.png" Stretch="Fill"/>
-        <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="60,210,60,100">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.3*"/>
-                <ColumnDefinition Width="0.3*"/>
-                <ColumnDefinition Width="0.3*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="0" Grid.Column="0" ItemText="当日挂号" Width="Auto" Height="Auto" ItemImageSource="Resources/guahao.png" MouseDown="MainItem_MouseDown_1"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="0" Grid.Column="1" ItemText="自助缴费" Width="Auto" Height="Auto" ItemImageSource="Resources/jiaofei.png" ItemBackground="#FF4EC9DC"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="0" Grid.Column="2" ItemText="自助查询" Width="Auto" Height="Auto" ItemImageSource="Resources/chaxun.png" ItemBackground="#FF5F9939"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="1" Grid.Column="0" ItemText="预约挂号" Width="Auto" Height="Auto" ItemImageSource="Resources/guahao_1.png" ItemBackground="#FFECD963"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="1" Grid.Column="1" ItemText="充值退还" Width="Auto" Height="Auto" ItemImageSource="Resources/chongzhi.png" ItemBackground="#FF92A4F5"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="1" Grid.Column="2" ItemText="凭条补打" Width="Auto" Height="Auto" ItemImageSource="Resources/dayin1.png" ItemBackground="#FFA77DF1"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="2" Grid.Column="0" ItemText="预约取号" Width="Auto" Height="Auto" ItemImageSource="Resources/quhaojiuzhen.png" ItemBackground="#FF57C3B4"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="2" Grid.Column="1" ItemText="银行业务" Width="Auto" Height="Auto" ItemImageSource="Resources/yinhangqia.png" ItemBackground="#FFDF99EA"/>
-            <local:MainItem Margin="3,3,3,3" Grid.Row="2" Grid.Column="2" ItemText="帮助" Width="Auto" Height="Auto" ItemImageSource="Resources/ico-.png" ItemBackground="#FF57C3B9"/>
-        </Grid>
-        <StatusBar HorizontalAlignment="Left" Height="76" Margin="0,918,0,0" VerticalAlignment="Top" Width="1272"/>
+        
+        <Frame Name="frmMain" Content=""  Margin="0,0,0,43" NavigationUIVisibility="Hidden">
+            <Frame.Background>
+                <ImageBrush ImageSource="Resources/main_bj.png"/>
+            </Frame.Background>
+        </Frame>
 
+        <StatusBar HorizontalAlignment="Left" Height="43" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="1024">
+            <StatusBar.Background>
+                <ImageBrush ImageSource="Resources/main_status.png"/>
+            </StatusBar.Background>
+            <Label Content="机器编号：ZD-1                   版本号：1.0.1                   技术支持：京威盛智能                   服务热线：4008-678-511" RenderTransformOrigin="1.85,0.423" Margin="100,0,0,0" Foreground="White" FontSize="15" FontWeight="Bold"/>
+        </StatusBar>
     </Grid>
 </Window>

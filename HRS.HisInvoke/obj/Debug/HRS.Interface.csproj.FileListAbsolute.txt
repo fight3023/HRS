@@ -1,0 +1,8 @@
+E:\医院\HRS\HRS.HisInvoke\bin\Debug\HRS.HisInvoke.dll
+E:\医院\HRS\HRS.HisInvoke\bin\Debug\HRS.HisInvoke.pdb
+E:\医院\HRS\HRS.HisInvoke\obj\Debug\HRS.HisInvoke.dll
+E:\医院\HRS\HRS.HisInvoke\obj\Debug\HRS.HisInvoke.pdb
+E:\医院\HRS\HRS.HisInvoke\obj\Debug\HRS.Interface.csprojResolveAssemblyReference.cache
+E:\医院\HRS\HRS.HisInvoke\bin\Debug\HRS.HisInvoke.dll.config
+E:\医院\HRS\HRS.HisInvoke\bin\Debug\HRS.Util.dll
+E:\医院\HRS\HRS.HisInvoke\bin\Debug\HRS.Util.pdb

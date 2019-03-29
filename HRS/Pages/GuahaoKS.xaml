@@ -1,0 +1,153 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:HRS.Controls" x:Class="HRS.Pages.GuahaoKS" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"  
+      mc:Ignorable="d" 
+      d:DesignHeight="725" d:DesignWidth="1024"
+	Title="GuahaoKS">
+    <Page.Resources>
+        <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource {x:Type TabItem}}">
+            <Setter Property="TextBlock.FontSize" Value="16" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                    <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+
+                        <Grid Margin="0,0,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="8*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border  CornerRadius="0,0,0,0" Grid.Column="0" >
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                </StackPanel>
+                            </Border>
+                            <Border BorderBrush="#8E8E8E"  BorderThickness="0,0,0,0.7" Background="{TemplateBinding Background}"  CornerRadius="0,0,0,0" Grid.Column="1" x:Name="tabItemBorder"  >
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Image x:Name="ImageIcon" Source="{TemplateBinding Tag}" Margin="10,15,8,15"/>
+                                    <TextBlock x:Name="Txt" Text="{TemplateBinding Header}" Margin="0,15,15,10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </StackPanel>
+                            </Border>
+                            <Border  CornerRadius="0,0,0,0" Grid.Column="2" >
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image Source="/HRS;component/Resources/ico_gh_arrow.png" Margin="0,20,10,20"/>
+                                </StackPanel>
+                            </Border>
+
+                        </Grid>
+
+
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Txt" Property="Foreground" Value="#C9455E"/>
+                                <Setter  Property="Panel.ZIndex" Value="100" />
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="false">
+                                <Setter TargetName="Txt" Property="Foreground" Value="#5E5E5E"/>
+                                <Setter  Property="Panel.ZIndex" Value="-1" />
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsSelected" Value="false"></Condition>
+                                    <Condition Property="IsMouseOver" Value="True"></Condition>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="tabItemBorder" Property="Background" Value="#B2FFFFFF" />
+                            </MultiTrigger>
+
+                            <Trigger Property="Name" Value="tabId">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_eye.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabYiyuan">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_yiyuan.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabMenzheng">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_menzheng.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabKeshi">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_keshi.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabShiduan">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_shiduan.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabYisheng">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_yisheng.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabZhifu">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_zhifu.png"/>
+                            </Trigger>
+                            <Trigger Property="Name" Value="tabDayin">
+                                <Setter TargetName="ImageIcon" Property="Source" Value="/HRS;component/Resources/ico_gh_dayin.png"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                        
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/HRS;component/Resources/bg_gh.png"/>
+        </Grid.Background>
+        <Label Name="lblGuahao" Content="当日挂号" HorizontalAlignment="Left" Margin="138,108,0,0" VerticalAlignment="Top" FontSize="28" Foreground="White" FontWeight="Normal"/>
+
+        <Controls:TimeControl HorizontalAlignment="Left" Margin="790,10,0,0" VerticalAlignment="Top" Height="55" Width="224"/>
+        <Controls:TimeCountdown x:Name="lblTimeOut" HorizontalAlignment="Left" Margin="910,108,0,0" VerticalAlignment="Top" TimeOut="TimeCountdown_TimeOut_1"/>
+        <TabControl HorizontalAlignment="Left" Height="468" Margin="93,184,0,0" VerticalAlignment="Top" Width="857" TabStripPlacement="Left" Background="Transparent" AlternationCount="-2" BorderBrush="{x:Null}">
+            <TabItem Name="tabId" Header="身份验证方式" Width="218" Height="54" Background="Transparent">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="身份证" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="89" Width="142"/>
+                    <Controls:EButton Content="银行卡" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="211,69,0,0" VerticalAlignment="Top" Height="89" Width="142"/>
+                    <Controls:EButton Content="医保卡" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="385,69,0,0" VerticalAlignment="Top" Height="89" Width="142"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabYiyuan" Header=" 选择挂号医院" Width="218" Height="54" Background="Transparent">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="第一医院" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabMenzheng" Header="选择门诊类别" Width="218" Height="54" Background="Transparent">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="普通门诊" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                    <Controls:EButton Content="专家门诊" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="242,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabKeshi" Header="选择就诊科室" Width="218" Height="54" Background="Transparent">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="内科" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                    <Controls:EButton Content="外科" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="242,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabShiduan" Header="选择挂号时段" Width="218" Height="54" Background="Transparent">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="上午" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                    <Controls:EButton Content="下午" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="242,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabYisheng" Header="选择挂号医生" Width="218" Height="54" Background="Transparent">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="张三" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                    <Controls:EButton Content="李四" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="242,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabZhifu" Header="选择支付方式" Width="218" Height="54" Background="Transparent" VerticalAlignment="Bottom">
+                <Grid Background="Transparent" ShowGridLines="False">
+                    <Controls:EButton Content="医保支付" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="54,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                    <Controls:EButton Content="银行卡支付" ButtonType="ButtonGH" HorizontalAlignment="Left" Margin="242,69,0,0" VerticalAlignment="Top" Height="50" Width="157"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabDayin" Header="打印挂号小票" Width="218" Height="55" Background="Transparent" VerticalAlignment="Bottom">
+                <Grid Background="Transparent" ShowGridLines="False"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Page>

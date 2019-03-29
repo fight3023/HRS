@@ -1,4 +1,3 @@
-E:\医院\HRS\WXHisInvoke\obj\Debug\WXHisInvoke.csprojResolveAssemblyReference.cache
 E:\医院\HRS\WXHisInvoke\bin\Debug\WXHisInvoke.dll
 E:\医院\HRS\WXHisInvoke\bin\Debug\WXHisInvoke.pdb
 E:\医院\HRS\WXHisInvoke\obj\Debug\WXHisInvoke.dll

@@ -23,18 +23,6 @@ namespace HRSBiz.Guahao
             return "";
         }
 
-        public string Guahao(string d)
-        {
-
-            return "";
-        }
-
-        public string Guahao(string d)
-        {
-
-            return "";
-        }
-
         public string Tuihao(string d)
         {
 

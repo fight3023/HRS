@@ -1,0 +1,8 @@
+E:\医院\HRS\HRS.Themes\bin\Debug\HRS.Themes.dll
+E:\医院\HRS\HRS.Themes\bin\Debug\HRS.Themes.pdb
+E:\医院\HRS\HRS.Themes\obj\Debug\HRS.Themes.dll
+E:\医院\HRS\HRS.Themes\obj\Debug\HRS.Themes.pdb
+E:\医院\HRS\HRS.Themes\obj\Debug\Themes\BureauBlue.baml
+E:\医院\HRS\HRS.Themes\obj\Debug\HRS.Themes_MarkupCompile.cache
+E:\医院\HRS\HRS.Themes\obj\Debug\HRS.Themes.g.resources
+E:\医院\HRS\HRS.Themes\obj\Debug\HRS.Themes.csprojResolveAssemblyReference.cache

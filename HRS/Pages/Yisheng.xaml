@@ -1,0 +1,15 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:HRS.Controls" x:Class="HRS.Pages.Yisheng" 
+      mc:Ignorable="d" d:DesignHeight="760" d:DesignWidth="1016"
+	Title="Yisheng">
+
+    <Grid>
+
+        <Controls:EButton Content="张三&#x000A;余号：10" FontSize="20"  HorizontalAlignment="Left" Height="94" Margin="509,63,0,0" VerticalAlignment="Top" Width="256" Click="EButton_Click_1" ButtonType="IconText" Icon="/HRS;component/Resources/guahao.png" TargetPage="Pages/Main.xaml" />
+
+    </Grid>
+</Page>

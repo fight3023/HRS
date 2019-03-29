@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://wsserver.his.jws.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="HISWSServerImplService" targetNamespace="http://wsserver.his.jws.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://wsserver.his.jws.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="faceIdentify" type="tns:faceIdentify" />
+      <xs:element name="faceIdentifyResponse" type="tns:faceIdentifyResponse" />
+      <xs:element name="faceReg" type="tns:faceReg" />
+      <xs:element name="faceRegResponse" type="tns:faceRegResponse" />
+      <xs:element name="heartbeat" type="tns:heartbeat" />
+      <xs:element name="heartbeatResponse" type="tns:heartbeatResponse" />
+      <xs:element name="log" type="tns:log" />
+      <xs:element name="logResponse" type="tns:logResponse" />
+      <xs:element name="mzGetFilmList" type="tns:mzGetFilmList" />
+      <xs:element name="mzGetFilmListResponse" type="tns:mzGetFilmListResponse" />
+      <xs:element name="mzReadPatientInfo" type="tns:mzReadPatientInfo" />
+      <xs:element name="mzReadPatientInfoResponse" type="tns:mzReadPatientInfoResponse" />
+      <xs:element name="mzReadPaymentDetail" type="tns:mzReadPaymentDetail" />
+      <xs:element name="mzReadPaymentDetailResponse" type="tns:mzReadPaymentDetailResponse" />
+      <xs:element name="mzReadPaymentList" type="tns:mzReadPaymentList" />
+      <xs:element name="mzReadPaymentListResponse" type="tns:mzReadPaymentListResponse" />
+      <xs:element name="mzSelectFilm" type="tns:mzSelectFilm" />
+      <xs:element name="mzSelectFilmResponse" type="tns:mzSelectFilmResponse" />
+      <xs:element name="mzValid" type="tns:mzValid" />
+      <xs:element name="mzValidResponse" type="tns:mzValidResponse" />
+      <xs:element name="mzValidSche" type="tns:mzValidSche" />
+      <xs:element name="mzValidScheResponse" type="tns:mzValidScheResponse" />
+      <xs:element name="qdFaceSignin" type="tns:qdFaceSignin" />
+      <xs:element name="qdFaceSigninResponse" type="tns:qdFaceSigninResponse" />
+      <xs:element name="qdOrderSignin" type="tns:qdOrderSignin" />
+      <xs:element name="qdOrderSigninResponse" type="tns:qdOrderSigninResponse" />
+      <xs:element name="qdPassSignin" type="tns:qdPassSignin" />
+      <xs:element name="qdPassSigninResponse" type="tns:qdPassSigninResponse" />
+      <xs:element name="qdReturnSignin" type="tns:qdReturnSignin" />
+      <xs:element name="qdReturnSigninResponse" type="tns:qdReturnSigninResponse" />
+      <xs:element name="qtGetHisSerialNo" type="tns:qtGetHisSerialNo" />
+      <xs:element name="qtGetHisSerialNoResponse" type="tns:qtGetHisSerialNoResponse" />
+      <xs:element name="qtInputAddr" type="tns:qtInputAddr" />
+      <xs:element name="qtInputAddrResponse" type="tns:qtInputAddrResponse" />
+      <xs:element name="qtQueryConsultRoom" type="tns:qtQueryConsultRoom" />
+      <xs:element name="qtQueryConsultRoomResponse" type="tns:qtQueryConsultRoomResponse" />
+      <xs:element name="qtQueryTriageInfo" type="tns:qtQueryTriageInfo" />
+      <xs:element name="qtQueryTriageInfoResponse" type="tns:qtQueryTriageInfoResponse" />
+      <xs:element name="queryParamInfo" type="tns:queryParamInfo" />
+      <xs:element name="queryParamInfoResponse" type="tns:queryParamInfoResponse" />
+      <xs:element name="updatecmd" type="tns:updatecmd" />
+      <xs:element name="updatecmdResponse" type="tns:updatecmdResponse" />
+      <xs:element name="yyOrder" type="tns:yyOrder" />
+      <xs:element name="yyOrderCancel" type="tns:yyOrderCancel" />
+      <xs:element name="yyOrderCancelResponse" type="tns:yyOrderCancelResponse" />
+      <xs:element name="yyOrderQuery" type="tns:yyOrderQuery" />
+      <xs:element name="yyOrderQueryResponse" type="tns:yyOrderQueryResponse" />
+      <xs:element name="yyOrderResponse" type="tns:yyOrderResponse" />
+      <xs:element name="yyOrderTake" type="tns:yyOrderTake" />
+      <xs:element name="yyOrderTakeResponse" type="tns:yyOrderTakeResponse" />
+      <xs:element name="yyValidPool" type="tns:yyValidPool" />
+      <xs:element name="yyValidPoolResponse" type="tns:yyValidPoolResponse" />
+      <xs:element name="yyValidSche" type="tns:yyValidSche" />
+      <xs:element name="yyValidScheResponse" type="tns:yyValidScheResponse" />
+      <xs:element name="zhBalanceQuery" type="tns:zhBalanceQuery" />
+      <xs:element name="zhBalanceQueryResponse" type="tns:zhBalanceQueryResponse" />
+      <xs:element name="zhBillDetailQuery" type="tns:zhBillDetailQuery" />
+      <xs:element name="zhBillDetailQueryResponse" type="tns:zhBillDetailQueryResponse" />
+      <xs:element name="zhGetQRCode" type="tns:zhGetQRCode" />
+      <xs:element name="zhGetQRCodeResponse" type="tns:zhGetQRCodeResponse" />
+      <xs:element name="zhGetRechargeQRCode" type="tns:zhGetRechargeQRCode" />
+      <xs:element name="zhGetRechargeQRCodeResponse" type="tns:zhGetRechargeQRCodeResponse" />
+      <xs:element name="zhOrderPayment" type="tns:zhOrderPayment" />
+      <xs:element name="zhOrderPaymentResponse" type="tns:zhOrderPaymentResponse" />
+      <xs:element name="zhOrderRefund" type="tns:zhOrderRefund" />
+      <xs:element name="zhOrderRefundResponse" type="tns:zhOrderRefundResponse" />
+      <xs:element name="zhRecharge" type="tns:zhRecharge" />
+      <xs:element name="zhRechargeResponse" type="tns:zhRechargeResponse" />
+      <xs:element name="zhTransDetailQuery" type="tns:zhTransDetailQuery" />
+      <xs:element name="zhTransDetailQueryResponse" type="tns:zhTransDetailQueryResponse" />
+      <xs:complexType name="yyOrderCancel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="yyxh" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrderCancelResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhTransDetailQuery">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="kssj" type="xs:string" />
+          <xs:element minOccurs="0" name="jssj" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhTransDetailQueryResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhBillDetailQuery">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="fphm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhBillDetailQueryResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdOrderSignin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="br" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdOrderSigninResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdPassSignin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="br" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdPassSigninResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="heartbeat">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="zt" type="xs:int" />
+          <xs:element minOccurs="0" name="dev" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="heartbeatResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="log">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="type" type="xs:string" />
+          <xs:element minOccurs="0" name="ret" type="xs:string" />
+          <xs:element minOccurs="0" name="content" type="xs:string" />
+          <xs:element minOccurs="0" name="memo" type="xs:string" />
+          <xs:element minOccurs="0" name="duration" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="logResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhGetRechargeQRCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="brxm" type="xs:string" />
+          <xs:element minOccurs="0" name="ddlx" type="xs:string" />
+          <xs:element minOccurs="0" name="zfje" type="xs:float" />
+          <xs:element minOccurs="0" name="fphm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhGetRechargeQRCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzGetFilmList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="mzzy" type="xs:int" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzGetFilmListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhOrderPayment">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="ddlx" type="xs:string" />
+          <xs:element minOccurs="0" name="fphm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhOrderPaymentResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updatecmd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updatecmdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhBalanceQuery">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhBalanceQueryResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrderTake">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="yyxh" type="xs:string" />
+          <xs:element minOccurs="0" name="ysdm" type="xs:string" />
+          <xs:element minOccurs="0" name="ksdm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrderTakeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzReadPaymentList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="cxlx" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzReadPaymentListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzValidSche">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="zjmz" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzValidScheResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtInputAddr">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="name" type="xs:string" />
+          <xs:element minOccurs="0" name="phone" type="xs:string" />
+          <xs:element minOccurs="0" name="addr" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtInputAddrResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzReadPaymentDetail">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="djlx" type="xs:int" />
+          <xs:element minOccurs="0" name="djsb" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzReadPaymentDetailResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdFaceSignin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="base64Img" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdFaceSigninResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faceReg">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="brxm" type="xs:string" />
+          <xs:element minOccurs="0" name="cardid" type="xs:string" />
+          <xs:element minOccurs="0" name="base64Img" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faceRegResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrder">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="ksdm" type="xs:string" />
+          <xs:element minOccurs="0" name="ysdm" type="xs:string" />
+          <xs:element minOccurs="0" name="jzrq" type="xs:string" />
+          <xs:element minOccurs="0" name="sxw" type="xs:int" />
+          <xs:element minOccurs="0" name="pdhm" type="xs:string" />
+          <xs:element minOccurs="0" name="pbsb" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrderResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzSelectFilm">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="mzzy" type="xs:int" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="accessnos" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzSelectFilmResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faceIdentify">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="base64Img" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faceIdentifyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtGetHisSerialNo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="jylx" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtGetHisSerialNoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzReadPatientInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="cxlx" type="xs:int" />
+          <xs:element minOccurs="0" name="cxcs" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzReadPatientInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhRecharge">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="jyje" type="xs:float" />
+          <xs:element minOccurs="0" name="szlb" type="xs:string" />
+          <xs:element minOccurs="0" name="sflb" type="xs:string" />
+          <xs:element minOccurs="0" name="hislsh" type="xs:string" />
+          <xs:element minOccurs="0" name="zflsh" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhRechargeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtQueryConsultRoom">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtQueryConsultRoomResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzValid">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="ksdm" type="xs:string" />
+          <xs:element minOccurs="0" name="ysdm" type="xs:string" />
+          <xs:element minOccurs="0" name="ybkmm" type="xs:string" />
+          <xs:element minOccurs="0" name="ybkxx" type="xs:string" />
+          <xs:element minOccurs="0" name="pbsb" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mzValidResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrderQuery">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brid" type="xs:string" />
+          <xs:element minOccurs="0" name="jzrq" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyOrderQueryResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyValidPool">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="ksdm" type="xs:string" />
+          <xs:element minOccurs="0" name="ysdm" type="xs:string" />
+          <xs:element minOccurs="0" name="gzrq" type="xs:string" />
+          <xs:element minOccurs="0" name="sxw" type="xs:int" />
+          <xs:element minOccurs="0" name="pbsb" type="xs:string" />
+          <xs:element minOccurs="0" name="cxfs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyValidPoolResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtQueryTriageInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qtQueryTriageInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhGetQRCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="brxm" type="xs:string" />
+          <xs:element minOccurs="0" name="ddlx" type="xs:string" />
+          <xs:element minOccurs="0" name="zfje" type="xs:float" />
+          <xs:element minOccurs="0" name="fphm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhGetQRCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queryParamInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="type" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queryParamInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyValidSche">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="ksdm" type="xs:string" />
+          <xs:element minOccurs="0" name="zjmz" type="xs:int" />
+          <xs:element minOccurs="0" name="ysdm" type="xs:string" />
+          <xs:element minOccurs="0" name="gzrq" type="xs:string" />
+          <xs:element minOccurs="0" name="sxw" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="yyValidScheResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdReturnSignin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="br" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qdReturnSigninResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhOrderRefund">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zdbh" type="xs:string" />
+          <xs:element minOccurs="0" name="jydm" type="xs:string" />
+          <xs:element minOccurs="0" name="ddlx" type="xs:string" />
+          <xs:element minOccurs="0" name="fphm" type="xs:string" />
+          <xs:element minOccurs="0" name="tkje" type="xs:float" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="zhOrderRefundResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="yyOrderCancel">
+    <wsdl:part name="parameters" element="tns:yyOrderCancel" />
+  </wsdl:message>
+  <wsdl:message name="zhBillDetailQuery">
+    <wsdl:part name="parameters" element="tns:zhBillDetailQuery" />
+  </wsdl:message>
+  <wsdl:message name="zhOrderRefundResponse">
+    <wsdl:part name="parameters" element="tns:zhOrderRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="qtInputAddrResponse">
+    <wsdl:part name="parameters" element="tns:qtInputAddrResponse" />
+  </wsdl:message>
+  <wsdl:message name="heartbeat">
+    <wsdl:part name="parameters" element="tns:heartbeat" />
+  </wsdl:message>
+  <wsdl:message name="zhGetRechargeQRCode">
+    <wsdl:part name="parameters" element="tns:zhGetRechargeQRCode" />
+  </wsdl:message>
+  <wsdl:message name="qdFaceSigninResponse">
+    <wsdl:part name="parameters" element="tns:qdFaceSigninResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzGetFilmList">
+    <wsdl:part name="parameters" element="tns:mzGetFilmList" />
+  </wsdl:message>
+  <wsdl:message name="updatecmd">
+    <wsdl:part name="parameters" element="tns:updatecmd" />
+  </wsdl:message>
+  <wsdl:message name="zhBalanceQuery">
+    <wsdl:part name="parameters" element="tns:zhBalanceQuery" />
+  </wsdl:message>
+  <wsdl:message name="yyOrderResponse">
+    <wsdl:part name="parameters" element="tns:yyOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatecmdResponse">
+    <wsdl:part name="parameters" element="tns:updatecmdResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzValidSche">
+    <wsdl:part name="parameters" element="tns:mzValidSche" />
+  </wsdl:message>
+  <wsdl:message name="qtInputAddr">
+    <wsdl:part name="parameters" element="tns:qtInputAddr" />
+  </wsdl:message>
+  <wsdl:message name="mzReadPaymentDetail">
+    <wsdl:part name="parameters" element="tns:mzReadPaymentDetail" />
+  </wsdl:message>
+  <wsdl:message name="qdFaceSignin">
+    <wsdl:part name="parameters" element="tns:qdFaceSignin" />
+  </wsdl:message>
+  <wsdl:message name="faceReg">
+    <wsdl:part name="parameters" element="tns:faceReg" />
+  </wsdl:message>
+  <wsdl:message name="mzSelectFilm">
+    <wsdl:part name="parameters" element="tns:mzSelectFilm" />
+  </wsdl:message>
+  <wsdl:message name="faceIdentify">
+    <wsdl:part name="parameters" element="tns:faceIdentify" />
+  </wsdl:message>
+  <wsdl:message name="mzValidScheResponse">
+    <wsdl:part name="parameters" element="tns:mzValidScheResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzReadPatientInfo">
+    <wsdl:part name="parameters" element="tns:mzReadPatientInfo" />
+  </wsdl:message>
+  <wsdl:message name="qtQueryConsultRoom">
+    <wsdl:part name="parameters" element="tns:qtQueryConsultRoom" />
+  </wsdl:message>
+  <wsdl:message name="zhOrderPaymentResponse">
+    <wsdl:part name="parameters" element="tns:zhOrderPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="qtQueryConsultRoomResponse">
+    <wsdl:part name="parameters" element="tns:qtQueryConsultRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="heartbeatResponse">
+    <wsdl:part name="parameters" element="tns:heartbeatResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhGetQRCode">
+    <wsdl:part name="parameters" element="tns:zhGetQRCode" />
+  </wsdl:message>
+  <wsdl:message name="mzReadPaymentListResponse">
+    <wsdl:part name="parameters" element="tns:mzReadPaymentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="yyValidPoolResponse">
+    <wsdl:part name="parameters" element="tns:yyValidPoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhTransDetailQueryResponse">
+    <wsdl:part name="parameters" element="tns:zhTransDetailQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryParamInfo">
+    <wsdl:part name="parameters" element="tns:queryParamInfo" />
+  </wsdl:message>
+  <wsdl:message name="yyValidSche">
+    <wsdl:part name="parameters" element="tns:yyValidSche" />
+  </wsdl:message>
+  <wsdl:message name="qdOrderSigninResponse">
+    <wsdl:part name="parameters" element="tns:qdOrderSigninResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryParamInfoResponse">
+    <wsdl:part name="parameters" element="tns:queryParamInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="qdReturnSignin">
+    <wsdl:part name="parameters" element="tns:qdReturnSignin" />
+  </wsdl:message>
+  <wsdl:message name="mzSelectFilmResponse">
+    <wsdl:part name="parameters" element="tns:mzSelectFilmResponse" />
+  </wsdl:message>
+  <wsdl:message name="yyOrderTakeResponse">
+    <wsdl:part name="parameters" element="tns:yyOrderTakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzGetFilmListResponse">
+    <wsdl:part name="parameters" element="tns:mzGetFilmListResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzReadPatientInfoResponse">
+    <wsdl:part name="parameters" element="tns:mzReadPatientInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhTransDetailQuery">
+    <wsdl:part name="parameters" element="tns:zhTransDetailQuery" />
+  </wsdl:message>
+  <wsdl:message name="zhGetQRCodeResponse">
+    <wsdl:part name="parameters" element="tns:zhGetQRCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="logResponse">
+    <wsdl:part name="parameters" element="tns:logResponse" />
+  </wsdl:message>
+  <wsdl:message name="qdOrderSignin">
+    <wsdl:part name="parameters" element="tns:qdOrderSignin" />
+  </wsdl:message>
+  <wsdl:message name="qdPassSignin">
+    <wsdl:part name="parameters" element="tns:qdPassSignin" />
+  </wsdl:message>
+  <wsdl:message name="qdReturnSigninResponse">
+    <wsdl:part name="parameters" element="tns:qdReturnSigninResponse" />
+  </wsdl:message>
+  <wsdl:message name="log">
+    <wsdl:part name="parameters" element="tns:log" />
+  </wsdl:message>
+  <wsdl:message name="yyOrderQueryResponse">
+    <wsdl:part name="parameters" element="tns:yyOrderQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhOrderPayment">
+    <wsdl:part name="parameters" element="tns:zhOrderPayment" />
+  </wsdl:message>
+  <wsdl:message name="zhRechargeResponse">
+    <wsdl:part name="parameters" element="tns:zhRechargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhGetRechargeQRCodeResponse">
+    <wsdl:part name="parameters" element="tns:zhGetRechargeQRCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="yyOrderTake">
+    <wsdl:part name="parameters" element="tns:yyOrderTake" />
+  </wsdl:message>
+  <wsdl:message name="mzReadPaymentList">
+    <wsdl:part name="parameters" element="tns:mzReadPaymentList" />
+  </wsdl:message>
+  <wsdl:message name="yyOrderCancelResponse">
+    <wsdl:part name="parameters" element="tns:yyOrderCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="faceRegResponse">
+    <wsdl:part name="parameters" element="tns:faceRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="yyOrder">
+    <wsdl:part name="parameters" element="tns:yyOrder" />
+  </wsdl:message>
+  <wsdl:message name="mzReadPaymentDetailResponse">
+    <wsdl:part name="parameters" element="tns:mzReadPaymentDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="qtGetHisSerialNo">
+    <wsdl:part name="parameters" element="tns:qtGetHisSerialNo" />
+  </wsdl:message>
+  <wsdl:message name="zhRecharge">
+    <wsdl:part name="parameters" element="tns:zhRecharge" />
+  </wsdl:message>
+  <wsdl:message name="zhBalanceQueryResponse">
+    <wsdl:part name="parameters" element="tns:zhBalanceQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzValid">
+    <wsdl:part name="parameters" element="tns:mzValid" />
+  </wsdl:message>
+  <wsdl:message name="yyOrderQuery">
+    <wsdl:part name="parameters" element="tns:yyOrderQuery" />
+  </wsdl:message>
+  <wsdl:message name="mzValidResponse">
+    <wsdl:part name="parameters" element="tns:mzValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="yyValidPool">
+    <wsdl:part name="parameters" element="tns:yyValidPool" />
+  </wsdl:message>
+  <wsdl:message name="qtQueryTriageInfo">
+    <wsdl:part name="parameters" element="tns:qtQueryTriageInfo" />
+  </wsdl:message>
+  <wsdl:message name="faceIdentifyResponse">
+    <wsdl:part name="parameters" element="tns:faceIdentifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="qdPassSigninResponse">
+    <wsdl:part name="parameters" element="tns:qdPassSigninResponse" />
+  </wsdl:message>
+  <wsdl:message name="qtQueryTriageInfoResponse">
+    <wsdl:part name="parameters" element="tns:qtQueryTriageInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhBillDetailQueryResponse">
+    <wsdl:part name="parameters" element="tns:zhBillDetailQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="qtGetHisSerialNoResponse">
+    <wsdl:part name="parameters" element="tns:qtGetHisSerialNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="zhOrderRefund">
+    <wsdl:part name="parameters" element="tns:zhOrderRefund" />
+  </wsdl:message>
+  <wsdl:message name="yyValidScheResponse">
+    <wsdl:part name="parameters" element="tns:yyValidScheResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHISWSServer">
+    <wsdl:operation name="yyOrderCancel">
+      <wsdl:input name="yyOrderCancel" message="tns:yyOrderCancel" />
+      <wsdl:output name="yyOrderCancelResponse" message="tns:yyOrderCancelResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhTransDetailQuery">
+      <wsdl:input name="zhTransDetailQuery" message="tns:zhTransDetailQuery" />
+      <wsdl:output name="zhTransDetailQueryResponse" message="tns:zhTransDetailQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhBillDetailQuery">
+      <wsdl:input name="zhBillDetailQuery" message="tns:zhBillDetailQuery" />
+      <wsdl:output name="zhBillDetailQueryResponse" message="tns:zhBillDetailQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qdOrderSignin">
+      <wsdl:input name="qdOrderSignin" message="tns:qdOrderSignin" />
+      <wsdl:output name="qdOrderSigninResponse" message="tns:qdOrderSigninResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qdPassSignin">
+      <wsdl:input name="qdPassSignin" message="tns:qdPassSignin" />
+      <wsdl:output name="qdPassSigninResponse" message="tns:qdPassSigninResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="heartbeat">
+      <wsdl:input name="heartbeat" message="tns:heartbeat" />
+      <wsdl:output name="heartbeatResponse" message="tns:heartbeatResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="log">
+      <wsdl:input name="log" message="tns:log" />
+      <wsdl:output name="logResponse" message="tns:logResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhGetRechargeQRCode">
+      <wsdl:input name="zhGetRechargeQRCode" message="tns:zhGetRechargeQRCode" />
+      <wsdl:output name="zhGetRechargeQRCodeResponse" message="tns:zhGetRechargeQRCodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzGetFilmList">
+      <wsdl:input name="mzGetFilmList" message="tns:mzGetFilmList" />
+      <wsdl:output name="mzGetFilmListResponse" message="tns:mzGetFilmListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhOrderPayment">
+      <wsdl:input name="zhOrderPayment" message="tns:zhOrderPayment" />
+      <wsdl:output name="zhOrderPaymentResponse" message="tns:zhOrderPaymentResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updatecmd">
+      <wsdl:input name="updatecmd" message="tns:updatecmd" />
+      <wsdl:output name="updatecmdResponse" message="tns:updatecmdResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhBalanceQuery">
+      <wsdl:input name="zhBalanceQuery" message="tns:zhBalanceQuery" />
+      <wsdl:output name="zhBalanceQueryResponse" message="tns:zhBalanceQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="yyOrderTake">
+      <wsdl:input name="yyOrderTake" message="tns:yyOrderTake" />
+      <wsdl:output name="yyOrderTakeResponse" message="tns:yyOrderTakeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzReadPaymentList">
+      <wsdl:input name="mzReadPaymentList" message="tns:mzReadPaymentList" />
+      <wsdl:output name="mzReadPaymentListResponse" message="tns:mzReadPaymentListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzValidSche">
+      <wsdl:input name="mzValidSche" message="tns:mzValidSche" />
+      <wsdl:output name="mzValidScheResponse" message="tns:mzValidScheResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qtInputAddr">
+      <wsdl:input name="qtInputAddr" message="tns:qtInputAddr" />
+      <wsdl:output name="qtInputAddrResponse" message="tns:qtInputAddrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzReadPaymentDetail">
+      <wsdl:input name="mzReadPaymentDetail" message="tns:mzReadPaymentDetail" />
+      <wsdl:output name="mzReadPaymentDetailResponse" message="tns:mzReadPaymentDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qdFaceSignin">
+      <wsdl:input name="qdFaceSignin" message="tns:qdFaceSignin" />
+      <wsdl:output name="qdFaceSigninResponse" message="tns:qdFaceSigninResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="faceReg">
+      <wsdl:input name="faceReg" message="tns:faceReg" />
+      <wsdl:output name="faceRegResponse" message="tns:faceRegResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="yyOrder">
+      <wsdl:input name="yyOrder" message="tns:yyOrder" />
+      <wsdl:output name="yyOrderResponse" message="tns:yyOrderResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzSelectFilm">
+      <wsdl:input name="mzSelectFilm" message="tns:mzSelectFilm" />
+      <wsdl:output name="mzSelectFilmResponse" message="tns:mzSelectFilmResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="faceIdentify">
+      <wsdl:input name="faceIdentify" message="tns:faceIdentify" />
+      <wsdl:output name="faceIdentifyResponse" message="tns:faceIdentifyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qtGetHisSerialNo">
+      <wsdl:input name="qtGetHisSerialNo" message="tns:qtGetHisSerialNo" />
+      <wsdl:output name="qtGetHisSerialNoResponse" message="tns:qtGetHisSerialNoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzReadPatientInfo">
+      <wsdl:input name="mzReadPatientInfo" message="tns:mzReadPatientInfo" />
+      <wsdl:output name="mzReadPatientInfoResponse" message="tns:mzReadPatientInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhRecharge">
+      <wsdl:input name="zhRecharge" message="tns:zhRecharge" />
+      <wsdl:output name="zhRechargeResponse" message="tns:zhRechargeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qtQueryConsultRoom">
+      <wsdl:input name="qtQueryConsultRoom" message="tns:qtQueryConsultRoom" />
+      <wsdl:output name="qtQueryConsultRoomResponse" message="tns:qtQueryConsultRoomResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mzValid">
+      <wsdl:input name="mzValid" message="tns:mzValid" />
+      <wsdl:output name="mzValidResponse" message="tns:mzValidResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="yyOrderQuery">
+      <wsdl:input name="yyOrderQuery" message="tns:yyOrderQuery" />
+      <wsdl:output name="yyOrderQueryResponse" message="tns:yyOrderQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="yyValidPool">
+      <wsdl:input name="yyValidPool" message="tns:yyValidPool" />
+      <wsdl:output name="yyValidPoolResponse" message="tns:yyValidPoolResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qtQueryTriageInfo">
+      <wsdl:input name="qtQueryTriageInfo" message="tns:qtQueryTriageInfo" />
+      <wsdl:output name="qtQueryTriageInfoResponse" message="tns:qtQueryTriageInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhGetQRCode">
+      <wsdl:input name="zhGetQRCode" message="tns:zhGetQRCode" />
+      <wsdl:output name="zhGetQRCodeResponse" message="tns:zhGetQRCodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryParamInfo">
+      <wsdl:input name="queryParamInfo" message="tns:queryParamInfo" />
+      <wsdl:output name="queryParamInfoResponse" message="tns:queryParamInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="yyValidSche">
+      <wsdl:input name="yyValidSche" message="tns:yyValidSche" />
+      <wsdl:output name="yyValidScheResponse" message="tns:yyValidScheResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="qdReturnSignin">
+      <wsdl:input name="qdReturnSignin" message="tns:qdReturnSignin" />
+      <wsdl:output name="qdReturnSigninResponse" message="tns:qdReturnSigninResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="zhOrderRefund">
+      <wsdl:input name="zhOrderRefund" message="tns:zhOrderRefund" />
+      <wsdl:output name="zhOrderRefundResponse" message="tns:zhOrderRefundResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HISWSServerImplServiceSoapBinding" type="tns:IHISWSServer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="yyOrderCancel">
+      <soap:operation soapAction="yyOrderCancel" style="document" />
+      <wsdl:input name="yyOrderCancel">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="yyOrderCancelResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhTransDetailQuery">
+      <soap:operation soapAction="zhTransDetailQuery" style="document" />
+      <wsdl:input name="zhTransDetailQuery">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhTransDetailQueryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhBillDetailQuery">
+      <soap:operation soapAction="zhBillDetailQuery" style="document" />
+      <wsdl:input name="zhBillDetailQuery">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhBillDetailQueryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qdOrderSignin">
+      <soap:operation soapAction="qdOrderSignin" style="document" />
+      <wsdl:input name="qdOrderSignin">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qdOrderSigninResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qdPassSignin">
+      <soap:operation soapAction="qdPassSignin" style="document" />
+      <wsdl:input name="qdPassSignin">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qdPassSigninResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="heartbeat">
+      <soap:operation soapAction="heartbeat" style="document" />
+      <wsdl:input name="heartbeat">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="heartbeatResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="log">
+      <soap:operation soapAction="log" style="document" />
+      <wsdl:input name="log">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="logResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhGetRechargeQRCode">
+      <soap:operation soapAction="zhGetRechargeQRCode" style="document" />
+      <wsdl:input name="zhGetRechargeQRCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhGetRechargeQRCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzGetFilmList">
+      <soap:operation soapAction="mzGetFilmList" style="document" />
+      <wsdl:input name="mzGetFilmList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzGetFilmListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhOrderPayment">
+      <soap:operation soapAction="zhOrderPayment" style="document" />
+      <wsdl:input name="zhOrderPayment">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhOrderPaymentResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatecmd">
+      <soap:operation soapAction="updatecmd" style="document" />
+      <wsdl:input name="updatecmd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updatecmdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhBalanceQuery">
+      <soap:operation soapAction="zhBalanceQuery" style="document" />
+      <wsdl:input name="zhBalanceQuery">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhBalanceQueryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="yyOrderTake">
+      <soap:operation soapAction="yyOrderTake" style="document" />
+      <wsdl:input name="yyOrderTake">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="yyOrderTakeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzReadPaymentList">
+      <soap:operation soapAction="mzReadPaymentList" style="document" />
+      <wsdl:input name="mzReadPaymentList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzReadPaymentListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzValidSche">
+      <soap:operation soapAction="mzValidSche" style="document" />
+      <wsdl:input name="mzValidSche">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzValidScheResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qtInputAddr">
+      <soap:operation soapAction="qtInputAddr" style="document" />
+      <wsdl:input name="qtInputAddr">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qtInputAddrResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzReadPaymentDetail">
+      <soap:operation soapAction="mzReadPaymentDetail" style="document" />
+      <wsdl:input name="mzReadPaymentDetail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzReadPaymentDetailResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qdFaceSignin">
+      <soap:operation soapAction="qdFaceSignin" style="document" />
+      <wsdl:input name="qdFaceSignin">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qdFaceSigninResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faceReg">
+      <soap:operation soapAction="faceReg" style="document" />
+      <wsdl:input name="faceReg">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="faceRegResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="yyOrder">
+      <soap:operation soapAction="yyOrder" style="document" />
+      <wsdl:input name="yyOrder">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="yyOrderResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzSelectFilm">
+      <soap:operation soapAction="mzSelectFilm" style="document" />
+      <wsdl:input name="mzSelectFilm">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzSelectFilmResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faceIdentify">
+      <soap:operation soapAction="faceIdentify" style="document" />
+      <wsdl:input name="faceIdentify">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="faceIdentifyResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qtGetHisSerialNo">
+      <soap:operation soapAction="qtGetHisSerialNo" style="document" />
+      <wsdl:input name="qtGetHisSerialNo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qtGetHisSerialNoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzReadPatientInfo">
+      <soap:operation soapAction="mzReadPatientInfo" style="document" />
+      <wsdl:input name="mzReadPatientInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzReadPatientInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhRecharge">
+      <soap:operation soapAction="zhRecharge" style="document" />
+      <wsdl:input name="zhRecharge">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhRechargeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qtQueryConsultRoom">
+      <soap:operation soapAction="qtQueryConsultRoom" style="document" />
+      <wsdl:input name="qtQueryConsultRoom">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qtQueryConsultRoomResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzValid">
+      <soap:operation soapAction="mzValid" style="document" />
+      <wsdl:input name="mzValid">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mzValidResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="yyOrderQuery">
+      <soap:operation soapAction="yyOrderQuery" style="document" />
+      <wsdl:input name="yyOrderQuery">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="yyOrderQueryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="yyValidPool">
+      <soap:operation soapAction="yyValidPool" style="document" />
+      <wsdl:input name="yyValidPool">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="yyValidPoolResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qtQueryTriageInfo">
+      <soap:operation soapAction="qtQueryTriageInfo" style="document" />
+      <wsdl:input name="qtQueryTriageInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qtQueryTriageInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhGetQRCode">
+      <soap:operation soapAction="zhGetQRCode" style="document" />
+      <wsdl:input name="zhGetQRCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhGetQRCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryParamInfo">
+      <soap:operation soapAction="queryParamInfo" style="document" />
+      <wsdl:input name="queryParamInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryParamInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="yyValidSche">
+      <soap:operation soapAction="yyValidSche" style="document" />
+      <wsdl:input name="yyValidSche">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="yyValidScheResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qdReturnSignin">
+      <soap:operation soapAction="qdReturnSignin" style="document" />
+      <wsdl:input name="qdReturnSignin">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="qdReturnSigninResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zhOrderRefund">
+      <soap:operation soapAction="zhOrderRefund" style="document" />
+      <wsdl:input name="zhOrderRefund">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="zhOrderRefundResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HISWSServerImplService">
+    <wsdl:port name="HISWSServerImplPort" binding="tns:HISWSServerImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/hois/ws/hisWSServer" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

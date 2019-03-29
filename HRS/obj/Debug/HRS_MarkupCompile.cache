@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Administrator\documents\visual studio 2012\Projects\HRS\HRS\obj\Debug\
+E:\医院\HRS\HRS\obj\Debug\
 HRS
 none
 false
 DEBUG;TRACE
-C:\Users\Administrator\documents\visual studio 2012\Projects\HRS\HRS\App.xaml
-4320551556
+E:\医院\HRS\HRS\App.xaml
+111056088767
 
-81485378959
-131478842535
-Page\BasePage.xaml;Page\LoginType.xaml;Controls\MainItem.xaml;MainWindow.xaml;
+15451054813
+23293260655
+Controls\EButton.xaml;Controls\TimeControl.xaml;Controls\TimeCountdown.xaml;Pages\GuahaoKS.xaml;Pages\Keshi.xaml;Pages\Main.xaml;Pages\Yisheng.xaml;Controls\MainItem.xaml;MainWindow.xaml;Styles\EButton.xaml;Styles\TabControlStyle.xaml;
 
 False
 

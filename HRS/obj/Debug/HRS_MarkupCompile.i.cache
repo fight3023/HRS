@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\医院\HRS\HRS\App.xaml
-4320551556
+111056088767
 
-12-1647098659
-131478842535
-Page\BasePage.xaml;Page\LoginType.xaml;Controls\MainItem.xaml;MainWindow.xaml;
+191613544491
+23293260655
+Controls\EButton.xaml;Controls\TimeControl.xaml;Controls\TimeCountdown.xaml;Pages\GuahaoKS.xaml;Pages\Keshi.xaml;Pages\Main.xaml;Pages\Yisheng.xaml;Controls\MainItem.xaml;MainWindow.xaml;Styles\EButton.xaml;Styles\TabControlStyle.xaml;
 
 False
 

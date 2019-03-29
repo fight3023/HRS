@@ -35,8 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,20 +61,57 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Page\BasePage.xaml.cs">
-      <DependentUpon>BasePage.xaml</DependentUpon>
+    <Compile Include="ConfigConstants.cs" />
+    <Compile Include="Controls\EButton.xaml.cs">
+      <DependentUpon>EButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\LoginType.xaml.cs">
-      <DependentUpon>LoginType.xaml</DependentUpon>
+    <Compile Include="Controls\TimeControl.xaml.cs">
+      <DependentUpon>TimeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeCountdown.xaml.cs">
+      <DependentUpon>TimeCountdown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GuahaoKS.xaml.cs">
+      <DependentUpon>GuahaoKS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Keshi.xaml.cs">
+      <DependentUpon>Keshi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Yisheng.xaml.cs">
+      <DependentUpon>Yisheng.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\MainItem.xaml.cs">
       <DependentUpon>MainItem.xaml</DependentUpon>
     </Compile>
-    <Page Include="Page\BasePage.xaml">
+    <Compile Include="Services\InterfaceClass.cs" />
+    <Page Include="Controls\EButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\LoginType.xaml">
+    <Page Include="Controls\TimeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TimeCountdown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\GuahaoKS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Keshi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Yisheng.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,6 +131,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Styles\EButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TabControlStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -106,14 +158,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
+    <Resource Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    </Resource>
     <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\iconfont.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\logo1.png" />
@@ -159,6 +214,98 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\yinhangqia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRS.HisInvoke\HRS.Interface.csproj">
+      <Project>{ff56df14-d9d0-4ee4-997f-41c1489714f2}</Project>
+      <Name>HRS.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRS.Interface.WS\HRS.Interface.WS.csproj">
+      <Project>{48281192-61af-4ef5-9679-fecdb1e4decc}</Project>
+      <Name>HRS.Interface.WS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRS.Util\HRS.Util.csproj">
+      <Project>{910d634f-a745-464c-b843-8aeac6bc1931}</Project>
+      <Name>HRS.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_chongzhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_dayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_guahao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_jiaofei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_quhao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_yinhang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_yuyue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\main_status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\main_bj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\main_bj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_dayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_keshi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_menzheng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_shiduan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_yisheng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_yiyuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_zhifu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bg_gh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ico_gh_arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

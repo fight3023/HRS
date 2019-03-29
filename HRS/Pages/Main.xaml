@@ -1,0 +1,39 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HRS" 
+      xmlns:Controls="clr-namespace:HRS.Controls" x:Class="HRS.Pages.Main" 
+      mc:Ignorable="d" 
+      d:DesignHeight="725" d:DesignWidth="1024"
+	Title="Main">
+
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/HRS;component/Resources/main_bj.png"/>
+        </Grid.Background>
+        <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="96,131,106,96">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="0" Grid.Column="0" ButtonType="ButtonMain"  Content="当日挂号" TargetPage="Pages/GuahaoKS.xaml" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_guahao.png" Click="EButton_Click_1" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="0" Grid.Column="1" ButtonType="ButtonMain" Content="自助缴费" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_jiaofei.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="0" Grid.Column="2" ButtonType="ButtonMain" Content="自助查询" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_search.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="1" Grid.Column="0" ButtonType="ButtonMain" Content="预约挂号" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_yuyue.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="1" Grid.Column="1" ButtonType="ButtonMain" Content="充值退还" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_chongzhi.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="1" Grid.Column="2" ButtonType="ButtonMain" Content="凭条补打" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_dayin.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="2" Grid.Column="0" ButtonType="ButtonMain" Content="预约取号" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_quhao.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="2" Grid.Column="1" ButtonType="ButtonMain" Content="银行业务" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_yinhang.png" />
+            <Controls:EButton Margin="11,36,11,36" Grid.Row="2" Grid.Column="2" ButtonType="ButtonMain" Content="帮助" Width="Auto" Height="Auto" Icon="/HRS;component/Resources/ico_help.png" />
+        </Grid>
+        <Controls:TimeControl HorizontalAlignment="Left" Margin="722,35,0,0" VerticalAlignment="Top" Height="55" Width="224"/>
+    </Grid>
+</Page>

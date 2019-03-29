@@ -1,0 +1,16 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:HRS.Controls" x:Class="HRS.Pages.Keshi" 
+      mc:Ignorable="d" d:DesignHeight="760" d:DesignWidth="1016"
+	Title="Keshi">
+
+    <Grid>
+
+        <Controls:EButton Content="内科" ButtonType="Normal" FontSize="20" TargetPage="Pages/Yisheng.xaml"  Icon="/HRS;component/Resources/jiaofei.png" HorizontalAlignment="Left" Height="49" Margin="178,63,0,0" VerticalAlignment="Top" Width="207" Click="EButton_Click_1"/>
+        <Controls:EButton Content="外科" ButtonType="IconText" FontSize="20" TargetPage="Pages/Yisheng.xaml"  Icon="/HRS;component/Resources/jiaofei.png"  HorizontalAlignment="Left" Height="49" Margin="509,63,0,0" VerticalAlignment="Top" Width="165" Click="EButton_Click_1" />
+        <Controls:EButton Content="儿科" ButtonType="Text" TargetPage="Pages/Yisheng.xaml"  FontSize="20" HorizontalAlignment="Left" Height="49" Margin="166,206,0,0" VerticalAlignment="Top" Width="207" Click="EButton_Click_1"/>
+    </Grid>
+</Page>

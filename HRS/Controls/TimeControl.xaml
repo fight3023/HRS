@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="HRS.Controls.TimeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="55.328" Width="223.77">
+    <Grid>
+        <Label Name="lblTime" Content="13:11" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,1.308" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <Label Name="lblDate" Content="2019/03/28" HorizontalAlignment="Left" Margin="114,0,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White" FontWeight="Thin" RenderTransformOrigin="1.59,0.687"/>
+        <Label Name="lblWeek" Content="星期四" HorizontalAlignment="Left" Margin="114,24,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White" RenderTransformOrigin="2.382,1.266"/>
+    </Grid>
+</UserControl>

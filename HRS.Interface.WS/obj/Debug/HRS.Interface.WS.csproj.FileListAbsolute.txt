@@ -1,0 +1,10 @@
+E:\医院\HRS\HRS.Interface.WS\obj\Debug\HRS.Interface.WS.csprojResolveAssemblyReference.cache
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.Interface.WS.dll.config
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.Interface.WS.dll
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.Interface.WS.pdb
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.HisInvoke.dll
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.Util.dll
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.HisInvoke.pdb
+E:\医院\HRS\HRS.Interface.WS\bin\Debug\HRS.Util.pdb
+E:\医院\HRS\HRS.Interface.WS\obj\Debug\HRS.Interface.WS.dll
+E:\医院\HRS\HRS.Interface.WS\obj\Debug\HRS.Interface.WS.pdb

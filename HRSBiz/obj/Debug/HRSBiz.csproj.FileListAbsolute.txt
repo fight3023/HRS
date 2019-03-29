@@ -1,0 +1,7 @@
+E:\医院\HRS\HRSBiz\obj\Debug\HRSBiz.csprojResolveAssemblyReference.cache
+E:\医院\HRS\HRSBiz\bin\Debug\HRSBiz.dll
+E:\医院\HRS\HRSBiz\bin\Debug\HRSBiz.pdb
+E:\医院\HRS\HRSBiz\bin\Debug\WXHisInvoke.dll
+E:\医院\HRS\HRSBiz\bin\Debug\WXHisInvoke.pdb
+E:\医院\HRS\HRSBiz\obj\Debug\HRSBiz.dll
+E:\医院\HRS\HRSBiz\obj\Debug\HRSBiz.pdb

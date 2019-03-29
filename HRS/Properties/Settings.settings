@@ -1,7 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HRS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ZDBH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1111111</Value>
+    </Setting>
+    <Setting Name="JYDM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000000</Value>
+    </Setting>
+    <Setting Name="HIS_WS_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:8080/hois/ws/hisWSServer?wsdl</Value>
+    </Setting>
+    <Setting Name="INTERFACE_DLL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HRS.Interface.WS.dll</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
